@@ -16,7 +16,7 @@
 1. 常用终端快捷键
 
    | command                                   | trick                  |
-   | :---:                                     | :---:                  |
+   | :---                                      | :---                   |
    | <kbd>ctrl</kbd> <kbd>a</kbd>              | 移动到行首             |
    | <kbd>ctrl</kbd> <kbd>e</kbd>              | 移动到行末             |
    | <kbd>ctrl</kbd> <kbd>b</kbd>              | 移动到前面一个字母     |
