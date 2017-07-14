@@ -26,3 +26,11 @@ powerline显示倒是没有问题, 但中文可就遭殃了,
 <p align="center">
     <img src="img/msys2_vim_powerline_font_pack.png">
 </p>
+
+---
+
+### Changelog
+
+- (2017-07-14) 发现自己合成的字体在Clion中打开全部为乱码,
+  肯定某个主要组成成分出了大问题(之前也出现过切换中文输入法无法输出中文的情况).
+  以后有空再做研究.
