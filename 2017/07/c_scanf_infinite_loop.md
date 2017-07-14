@@ -71,4 +71,4 @@ while((c = getchar()) != '\n' && c != EOF)
 根据[回答](https://stackoverflow.com/a/6277391/4154610),
 应使用 `fgets` 以及 `sscanf` 来替换一般的 `scanf`.
 
-**TODO**
+**TO BE CONTINUED**
