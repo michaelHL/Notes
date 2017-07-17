@@ -1,7 +1,5 @@
 ## CentOS服务器使用Nginx部署Hexo博客并利用Webhook自动更新
 
-> 在阿里云服务器上使用Nginx部署Hexo博客, 并与Github同步
-
 ### 1. 部署本地Hexo博客以及同步到Github
 
 #### 安装
@@ -15,6 +13,8 @@ CentOS系统下直接 `yum` 安装即可:
 yum install git
 yum install nodejs
 ```
+
+<!-- more -->
 
 两个工具都装好之后, 利用 `npm` 安装 `hexo`:
 
@@ -37,7 +37,7 @@ npm install
 
 `Hexo` 文件夹下的 `_config.yml` 为站点配置文件, 比如
 
-```
+```yaml
 # Site
 title:
 subtitle:
@@ -86,7 +86,7 @@ npm install hexo-deployer-git --save
 
 在前述 `_config.yml` 文件中, 找到 `deploy` 项, 配置为:
 
-```
+```yaml
 deploy:
   type: git
   repo: git@github.com:xxx/blog.git
@@ -98,7 +98,7 @@ deploy:
 直接利用 `hexo deploy` 或 `hexo d` 直接push到Github上.
 生成静态文件与同步可以合为一步(两者作用相同):
 
-```
+```sh
 hexo g -d
 hexo d -g
 ```
@@ -143,8 +143,7 @@ server {
 
 ### 3. Github自动同步到服务器
 
-以 `root` 用户登录, 创建两个文件(这里为了方便,
-将两个文件放在了同一个目录下):
+以 `root` 用户登录, 创建两个文件:
 
 - `sync.sh`: 用于从Github上pull数据, 即更新本地网站目录,
   注意加上执行权限
@@ -153,16 +152,18 @@ server {
    echo -e "\033[32m [AUTO SYNC] sync hexo start \033[0m"
    cd /var/www/blog
    echo -e "\033[32m [AUTO SYNC] git pull...  \033[0m"
-   git pull origin master
+   git fetch --all
+   git reset --hard origin/master
+   git pull
    echo -e "\033[32m [AUTO SYNC] sync hexo finish \033[0m"
    ```
 - `hexo-server.js`: 接受Github的post信息后执行 `sync.sh`
-  ```
+  ```javascript
   var http = require('http')
   var exec = require('child_process').exec
   var createHandler = require('github-webhook-handler')
   var handler = createHandler({ path: '/webhook', secret: '******' })
-  
+
   http.createServer(function (req, res) {
     handler(req, res, function (err) {
       res.statusCode = 404
@@ -196,6 +197,7 @@ server {
   })
   ```
 
+注意 `hexo-server.js` 中的 `sync.sh` 填写的是绝对路径.
 安装 `github-webhook-handler` 以及 `forever`:
 
 ```sh
