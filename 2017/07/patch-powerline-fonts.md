@@ -24,7 +24,7 @@ powerline显示倒是没有问题, 但中文可就遭殃了,
 ### 成品
 
 <p align="center">
-    <img src="img/msys2_vim_powerline_font_pack.png">
+    <img src="img/msys2-vim-powerline-font-pack.png">
 </p>
 
 ---
