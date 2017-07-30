@@ -5,8 +5,6 @@
 - [VSCode](https://code.visualstudio.com/)
 - [MSYS2](http://www.msys2.org/)
 
-该方案重心在 MSYS2 上.
-
 #### 步骤
 
 这里的 MSYS2 部分主要参考 [MSYS2开发环境搭建](http://blog.csdn.net/callinglove/article/details/48601775).
