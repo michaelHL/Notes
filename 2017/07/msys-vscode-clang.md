@@ -7,14 +7,14 @@
 
 #### 步骤
 
-这里的 MSYS2 部分主要参考 [MSYS2开发环境搭建](http://blog.csdn.net/callinglove/article/details/48601775).
+这里的 MSYS2 配置部分主要参考 [MSYS2开发环境搭建](http://blog.csdn.net/callinglove/article/details/48601775).
 
 1. 下载 MSYS2 installer, 建议安装路径不包含空格(个人装在了 `D:` 下)
    <p align="center">
        <img src="img/msys-vscode-clang-01.png">
    </p>
 
-1. 修改软件源, 这里参考了 [给 MSYS2 添加中科大的源](http://blog.csdn.net/liyuanbhu/article/details/56496501),
+1. 修改软件源, 这里参考了 「[给 MSYS2 添加中科大的源](http://blog.csdn.net/liyuanbhu/article/details/56496501)」,
    不过为方便起见偷了过来. 修改 `/etc/pacman.d/` 目录下的三个文件,
    `.msys`, `.mingw32`, `.mingw64` 分别对应 `MSYS2` 里的三套系统,
    **分别**在三个文件最上方填写(注意对应):
@@ -48,7 +48,7 @@
    pacman -S mingw-w64-i686-toolchain
    ```
 
-1. 将 `/mingw64/bin` 加入系统环境变量
+1. 将 `/mingw64/bin` 加入系统环境变量(或者 `/mingw32/bin` )
    <p align="center">
        <img src="img/msys-vscode-clang-02.png">
    </p>
@@ -64,7 +64,7 @@
 但发现一定情况下对 C++ 文件不提示, 于是干脆利用 MSYS2 直接对这些工具来个集成,
 一来方便管理, 二来无需对 VSCode 进行过多的配置. 测试环境的各版本如下:
 
-Tool                        | Version
+Entries                     | Version
 ------                      | ------
 OS                          | Windows 10 x64 (1607)
 VSCode                      | 1.14.2
