@@ -1,7 +1,5 @@
 ## Windows下VSCode利用Clang对C/C++进行补全
 
-### 方案一(需安装MSYS2环境)
-
 #### 原料
 
 - [VSCode](https://code.visualstudio.com/)
@@ -48,4 +46,19 @@
    pacman -S mingw-w64-i686-toolchain
    ```
 
-1. 将 `mingw64/bin` 加入系统环境变量
+1. 将 `/mingw64/bin` 加入系统环境变量
+1. 在VSCode中安装[C/C++ Clang Command Adapter](https://github.com/mitaki28/vscode-clang)插件
+1. 开耍
+
+#### 注记
+
+之前尝试过分别下载 MinGW GCC、LLVM-Clang进行配置,
+但发现一定情况下对 C++ 文件不提示, 于是干脆利用 MSYS2 直接对这些工具来个集成,
+一来方便管理, 二来无需对 VSCode 进行过多的配置. 测试环境的各版本如下:
+
+Tool   | Version
+------ | ------
+VSCode | 1.14.2
+GCC    | (Rev2, Built by MSYS2 project) 7.1.0
+Clang  | 4.0.0 posix
+
