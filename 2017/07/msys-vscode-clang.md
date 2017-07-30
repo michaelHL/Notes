@@ -46,6 +46,8 @@
    pacman -S gcc
    pacman -S mingw-w64-x86_64-toolchain
    pacman -S mingw-w64-i686-toolchain
+   pacman -S mingw64/mingw-w64-x86_64-clang 
+   pacman -S mingw32/mingw-w64-i686-clang 
    ```
 
 1. 将 `/mingw64/bin` 加入系统环境变量(或者 `/mingw32/bin` )
