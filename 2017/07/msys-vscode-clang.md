@@ -57,7 +57,7 @@
 1. 在VSCode中安装[C/C++ Clang Command Adapter](https://github.com/mitaki28/vscode-clang)插件
 1. 开耍
    <p align="center">
-       <img src="img/msys-vscode-clang-03.png">
+       <img src="img/msys-vscode-clang-03.gif">
    </p>
 
 #### 注记
