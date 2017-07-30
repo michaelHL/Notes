@@ -7,7 +7,7 @@
 
 #### 步骤
 
-这里的 MSYS2 配置部分主要参考 [MSYS2开发环境搭建](http://blog.csdn.net/callinglove/article/details/48601775).
+这里的 MSYS2 配置部分主要参考 「[MSYS2开发环境搭建](http://blog.csdn.net/callinglove/article/details/48601775)」.
 
 1. 下载 MSYS2 installer, 建议安装路径不包含空格(个人装在了 `D:` 下)
    <p align="center">
