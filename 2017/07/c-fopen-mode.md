@@ -94,4 +94,4 @@ void printFile(FILE *fp) {
   这样利用系统函数才能正确打印.
 - `w+`, `a+` 在原有的只能往文件流里面写入的基础上, 增加了读取的功能,
   同样, `r+` 既能读又能写.
-- 二进制模式下, 可参考之前的文章[Line Break 初窥](line_break_eof.md)
+- 二进制模式下, 可参考之前的文章[Line Break 初窥](line-break-eof.md)
