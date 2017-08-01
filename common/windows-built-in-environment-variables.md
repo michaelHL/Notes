@@ -1,7 +1,7 @@
 ## Windows 标准(内置)环境变量
 
 
-Variable                        | Volatile <br> (Read-Only) | Default value in Windows 7/10/2008 (assuming the system drive is C: )
+Variable                        | Volatile <br> (Read-Only) | Default value in Windows (system drive is C: )
 --------                        | --------                  | --------
 ALLUSERSPROFILE                 |                           | C:\ProgramData
 APPDATA                         |                           | C:\Users\{username}\AppData\Roaming
