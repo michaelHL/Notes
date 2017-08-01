@@ -1,6 +1,5 @@
 ## Windows 标准(内置)环境变量
 
-
 Variable                                                            | Volatile <br> (Read-Only) | Default value in Windows (system drive is C: )
 --------                                                            | --------                  | --------
 ALLUSERSPROFILE                                                     |                           | `C:\ProgramData`
