@@ -26,7 +26,7 @@
 
    (听说中科大的源会炸, 是真的么)
    <p align="center">
-       <img src="img/msys-vscode-clang-02.png">
+       <img src="img/bqb-slap-table.jpg">
    </p>
 
 1. 随便挑一个(`mingw32.exe`, `mingw64.exe`, `msys2.exe`)进入 `MSYS2` 的终端,
