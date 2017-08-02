@@ -16,7 +16,7 @@
 - [CTags Support](https://github.com/jaydenlin/ctags-support)
 - [ctags](https://marketplace.visualstudio.com/items?itemName=hcyang.ctags)
 
-不过全字匹配的第三个插件竟然没放Github仓库地址, 而且唯独它获得4个:star2:,
+不过全字匹配的第三个插件竟然没放Github仓库地址, 而且唯独它获得4个:star:,
 对比其他两个插件发现功能几乎完全相同, 但第二个经测试发现并不能进行跳转,
 所以下面对ctagsx这个插件进行配置(其实并没有什么配置).
 
@@ -37,9 +37,20 @@ make install
 等待编译的同时可以随手在VSCode中安装下ctagsx插件.
 如果一切顺利, `which ctags` 应显示 `/usr/local/bin/ctags`.
 
-进入工程目录, 
+进入工程目录, 作者建议的命令为
+
+```bash
+ctags --tag-relative --extra=f -R .
+```
+
+不过精简成 `ctags -R .` 发现也是可以的. (ctags细节以后再作深入),
+那么在VSCode里面用 <kbd>C-t</kbd>, <kbd>A-t</kbd> 就能跳过去/跳回来了.
+不过感觉这两个键容易被占用(如果装了Vim插件会发现 <kbd>C-t</kbd> 是有功能的),
+所以我改成了与Vim中相同的按键 <kbd>C-]</kbd> 和 <kbd>C-o</kbd>.
 
 ### 开耍
+
+
 
 
 
