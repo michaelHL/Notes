@@ -50,7 +50,8 @@ ctags --tag-relative --extra=f -R .
 
 ### 开耍
 
+<p align="center">
+   <img src="img/msys-vscode-ctags.gif">
+</p>
 
-
-
-
+**注** 不能跳到没有索引的地方, 比如不在项目路径中的系统库文件.
