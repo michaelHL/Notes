@@ -12,11 +12,34 @@
 [Extensions](https://marketplace.visualstudio.com/VSCode)
 里面搜索一番, 找到三个类似的插件:
 
-- [ctagsx](https://github.com/jtanx/ctagsx/issues)
+- [ctagsx](https://github.com/jtanx/ctagsx)
 - [CTags Support](https://github.com/jaydenlin/ctags-support)
 - [ctags](https://marketplace.visualstudio.com/items?itemName=hcyang.ctags)
 
 不过全字匹配的第三个插件竟然没放Github仓库地址, 而且唯独它获得4个:star2:,
 对比其他两个插件发现功能几乎完全相同, 但第二个经测试发现并不能进行跳转,
+所以下面对ctagsx这个插件进行配置(其实并没有什么配置).
+
+### 配置
+
+既然系统上有了[MSYS2](www.msys2.org), 那干脆用它编译下Ctags,
+进[Ctags官网](http://ctags.sourceforge.net), 直接下载源文件
+(`ctags-x.tar.gz`), 文件版本为 `5.8`, 进行下面的操作:
+
+```bash
+tar -zxvf ctags-5.8.tar.gz
+cd ctags-5.8
+./configure --prefix=/usr/local
+make
+make install
+```
+
+等待编译的同时可以随手在VSCode中安装下ctagsx插件.
+如果一切顺利, `which ctags` 应显示 `/usr/local/bin/ctags`.
+
+进入工程目录, 
+
+### 开耍
+
 
 
