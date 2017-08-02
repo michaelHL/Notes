@@ -9,7 +9,7 @@
    ```
 
 3. 上面的命令只是查询U盘的设备号, 比如此次安装时显示出U盘的设备号为 `sdb4`,
-   按下 <kdb>ctrl</kdb><kbd>alt</kbd><kbd>delete</kbd>强制重启,
+   按下 <kdb>ctrl</kdb> <kbd>alt</kbd> <kbd>delete</kbd>强制重启,
    在下次的重启选项中键入
 
    ```bash
