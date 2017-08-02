@@ -75,6 +75,6 @@ C/C++ Clang Command Adapter | 0.2.2
 GCC                         | (Rev2, Built by MSYS2 project) 7.1.0
 Clang                       | 4.0.0 posix
 
-### Changelog
+### 链接
 
 - [Windows下VSCode利用Ctags实现C/C++文件进行跳转](../08/msys-vscode-ctags.md)
