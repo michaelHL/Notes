@@ -14,7 +14,7 @@
        <img src="img/msys-vscode-clang-01.png">
    </p>
 
-1. 修改软件源, 修改 `/etc/pacman.d/` 目录下的三个文件,
+1. 修改软件源, 修改 `/etc/pacman.d/` 目录下的三个文件, 换上清华的repo,
    `.msys`, `.mingw32`, `.mingw64` 分别对应 `MSYS2` 里的三套系统,
    **分别**在三个文件最上方填写(注意对应):
 
