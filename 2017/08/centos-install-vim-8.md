@@ -50,6 +50,7 @@
    ```
 
 1. 开耍. `vim --version`
+
    ```sh
    VIM - Vi IMproved 8.0 (2016 Sep 12, compiled Aug  3 2017 06:43:08)
    Included patches: 1-844
