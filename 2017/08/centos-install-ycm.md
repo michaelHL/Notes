@@ -61,6 +61,8 @@ cmake --build . --target ycm_core
 
 ### .vimrc配置
 
+记得在插件区中加入 `Plugin 'Valloric/YouCompleteMe'`.
+
 ```vim
 let g:ycm_global_ycm_extra_conf='~/.ycm_extra_conf.py'
 let g:ycm_seed_identifiers_with_syntax = 1
