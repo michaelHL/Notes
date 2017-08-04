@@ -69,3 +69,14 @@ let g:ycm_seed_identifiers_with_syntax = 1
 let g:ycm_confirm_extra_conf = 0
 set completeopt=longest,menu
 ```
+
+### 致谢
+
+- [YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
+- [LLVM](https://clang.llvm.org/)
+- [GCC](https://gcc.gnu.org/)
+- [centos6.5升级gcc到4.9](http://blog.techbeta.me/2015/10/linux-centos6-5-upgrade-gcc/)
+- [CentOS 6.5 升级 GCC 4.9.3](http://www.cnblogs.com/wanghaiyang1930/p/5608531.html)
+- [Linux下GLIBCXX和GLIBC版本低造成的编译错误的解决方案](http://blog.csdn.net/officercat/article/details/39519265)
+- [Centos7安装vim8.0 + YouCompleteMe](http://blog.csdn.net/nzyalj/article/details/75331822)
+  - 该博主利用 `devtoolset` 来更新 GCC 版本, 不过在测试中无效
