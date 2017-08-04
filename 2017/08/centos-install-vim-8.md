@@ -5,7 +5,7 @@
 1. 系统用U盘进行安装的, 自带了个 `python2.7`. 首先安装必要包(可能不全)
 
    ```sh
-   yum install mercurial ruby ruby-devel lua lua-devel luajit python-devel python34 python34-devel
+   yum install mercurial ncurses-devel ruby ruby-devel lua lua-devel luajit python-devel python34 python34-devel
    ```
 
 1. `git clone` [Vim](https://github.com/vim/vim) 的仓库
