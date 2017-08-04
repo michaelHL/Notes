@@ -12,4 +12,5 @@
   如果要合盖不休眠只需要把 `HandleLidSwitch` 选项设置为如下即可:
   `HandleLidSwitch=lock`, 并运行下列命令才生效:
   `systemctl restart systemd-logind`
+- 解压 `.bz2` 文件失败: `yum install install bzip2`
 
