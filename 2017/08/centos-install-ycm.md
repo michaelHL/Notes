@@ -53,7 +53,7 @@ cmake -G "Unix Makefiles" -DPATH_TO_LLVM_ROOT=~/ycm_temp/clang+llvm-3.9.0-x86_64
 cmake --build . --target ycm_core
 ```
 
-分步下载, 利用 LLVM-Clang 编译.
+YCM分步下载, 下载 3.9.0 版本的 Clang, 再利用其编译.
 
 ### C-family的语义分析支持
 
@@ -69,6 +69,11 @@ let g:ycm_seed_identifiers_with_syntax = 1
 let g:ycm_confirm_extra_conf = 0
 set completeopt=longest,menu
 ```
+
+### 附加问题
+
+- 一定概率碰到提示 `python interpreter` 的问题, 在 `.vimrc` 设置 `python`
+  路径即可: `let g:ycm_server_python_interpreter = '/usr/bin/python2'`.
 
 ### 致谢
 
