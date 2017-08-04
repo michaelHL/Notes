@@ -70,10 +70,14 @@ let g:ycm_confirm_extra_conf = 0
 set completeopt=longest,menu
 ```
 
-### 附加问题
+### 额外问题
 
 - 一定概率碰到提示 `python interpreter` 的问题, 在 `.vimrc` 设置 `python`
-  路径即可: `let g:ycm_server_python_interpreter = '/usr/bin/python2'`.
+  路径即可:
+
+  ```vim
+  let g:ycm_server_python_interpreter = '/usr/bin/python2'`
+  ```
 
 ### 致谢
 
