@@ -82,7 +82,7 @@ cmake -G "Visual Studio 15 Win64" ^
 
 ### 链接
 
-- [CentOS7.3编译Vim记录](centos-compile-install-vim-8.md)
-- [CentOS下安装Vim插件YouCompleteme(YCM)](centos-install-ycm.md)
-- [Windows下VSCode利用Clang对C/C++进行补全](../07/msys-vscode-clang.md)
-- [Windows下VSCode利用Ctags实现C/C++文件进行跳转](msys-vscode-ctags.md)
+- [CentOS7.3编译Vim记录](compile-vim-8-on-centos.md)
+- [CentOS下安装Vim插件YouCompleteme(YCM)](install-ycm-on-centos.md)
+- [Windows下VSCode利用Clang对C/C++进行补全](../07/c-c++-completion-in-vscode-via-msys2-and-clang.md)
+- [Windows下VSCode利用Ctags实现C/C++文件进行跳转](c-c++-code-navigation-by-ctags-on-windows)
