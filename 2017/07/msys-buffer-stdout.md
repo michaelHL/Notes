@@ -29,6 +29,12 @@ int main(void) {
 - `mingw-w64-i686-toolchain`
 - `mingw-w64-x86_64-toolchain`
 
+---
+
+### 2017-08-05 更新
+
+在 MinGW32 / MinGW64 中, 使用 `winpty` 这个工具即可.
+
 **参考**
 
 - [[ mingw-Bugs-1262201 ] msys-1.0.10 stdin/stdout IO delay](http://mingw-notify.narkive.com/FCHi4Y3S/mingw-bugs-1262201-msys-1-0-10-stdin-stdout-io-delay)
