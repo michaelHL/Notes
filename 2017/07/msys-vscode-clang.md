@@ -1,11 +1,11 @@
 ## Windows下VSCode利用Clang对C/C++进行补全
 
-#### 原料
+### 原料
 
 - [VSCode](https://code.visualstudio.com/)
 - [MSYS2](http://www.msys2.org/)
 
-#### 步骤
+### 步骤
 
 这里的 MSYS2 配置部分主要参考 「[MSYS2开发环境搭建](http://blog.csdn.net/callinglove/article/details/48601775)」.
 
@@ -61,7 +61,7 @@
        <img src="img/msys-vscode-clang-03.gif">
    </p>
 
-#### 注记
+### 注记
 
 之前尝试过分别下载 MinGW GCC、LLVM-Clang进行配置,
 但发现一定情况下对 C++ 文件不提示, 于是干脆利用 MSYS2 直接对这些工具来个集成,
