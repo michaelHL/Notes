@@ -80,7 +80,7 @@ cmake -G "Visual Studio 15 Win64" ^
 貌似是最佳组合, 但在 VSCode 中我还是使用之前介绍的基于 `Clang` 的补全
 (虽然没有跳转功能).
 
-### 相关链接
+### 链接
 
 - [CentOS7.3编译Vim记录](centos-compile-install-vim-8.md)
 - [CentOS下安装Vim插件YouCompleteme(YCM)](centos-install-ycm.md)
