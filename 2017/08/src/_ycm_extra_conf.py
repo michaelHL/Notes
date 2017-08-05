@@ -81,17 +81,17 @@ flags = [
 '-isystem',
 './tests/gmock/include',
 '-isystem',
-'D:/MSYS2/mingw64/include/c++/7.1.0',
+'E:/MinGW/7.1.0/include/c++/7.1.0',
 '-isystem',
-'D:/MSYS2/mingw64/include/c++/7.1.0/x86_64-w64-mingw32',
+'E:/MinGW/7.1.0/include/c++/7.1.0/x86_64-w64-mingw32',
 '-isystem',
-'D:/MSYS2/mingw64/include/c++/7.1.0/backward',
+'E:/MinGW/7.1.0/include/c++/7.1.0/backward',
 '-isystem',
-'D:/MSYS2/mingw64/include',
+'E:/MinGW/7.1.0/include',
 '-isystem',
-'D:/MSYS2/mingw64/lib/gcc/x86_64-w64-mingw32/7.1.0/include',
+'E:/MinGW/7.1.0/lib/gcc/x86_64-w64-mingw32/7.1.0/include',
 '-isystem',
-'D:/MSYS2/mingw64/x86_64-w64-mingw32/include'
+'E:/MinGW/7.1.0/x86_64-w64-mingw32/include'
 ]
 
 
@@ -194,3 +194,4 @@ def FlagsForFile( filename, **kwargs ):
     final_flags = MakeRelativePathsInFlagsAbsolute( flags, relative_to )
 
   return { 'flags': final_flags }
+
