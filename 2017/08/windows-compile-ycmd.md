@@ -72,7 +72,7 @@ cmake -G "Visual Studio 15 Win64" ^
 "ycmd.python": "D:\\Python\\Python27\\python.exe",
 ```
 
-以及 YCM 所需的 [`.ycm_extra_conf.py`](src/_ycm_extra_conf.py).
+以及 YCM 所需的 [`_ycm_extra_conf.py`](src/_ycm_extra_conf.py).
 
 ### 摘记
 
