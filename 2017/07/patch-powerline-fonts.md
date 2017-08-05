@@ -40,3 +40,7 @@ powerline显示倒是没有问题, 但中文可就遭殃了,
 FontCreator 貌似是一款不错的工具(似乎要收费:astonished:)  
 另外, 已放弃折腾组合字体, 改用海纳百川的
 [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts).
+
+<p align="center">
+    <img src="img/msys2-vim-powerline-font-pack-nerd-fonts.png">
+</p>
