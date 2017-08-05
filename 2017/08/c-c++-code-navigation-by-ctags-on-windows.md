@@ -1,6 +1,6 @@
 ## Windows下VSCode利用Ctags实现C/C++文件进行跳转
 
-之前写了篇[Windows下VSCode利用Clang对C/C++进行补全](../07/c-c++-completion-in-vscode-via-msys2-and-clang),
+之前写了篇[Windows下VSCode利用Clang对C/C++进行补全](../07/c-c++-completion-in-vscode-via-msys2-and-clang.md),
 但谈到C/C++文件的跳转问题, 官方的插件[C/C++](https://github.com/Microsoft/vscode-cpptools/issues)
 实在不敢恭维, 光代码提示出来一大堆无用的东西不说,
 每次打开C/C++文件都会先烧CPU一刻钟在说, 看
