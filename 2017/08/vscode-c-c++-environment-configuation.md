@@ -61,6 +61,6 @@
 
 - 开耍.
   <p align="center">
-      <img src="img/vscode-c-c++-environment-05.png">
+      <img src="img/vscode-c-c++-environment-05.gif">
   </p>
 
