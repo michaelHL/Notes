@@ -68,7 +68,7 @@ cmake -G "Visual Studio 15 Win64" ^
 ```json
 "ycmd.path": "E:\\YouCompleteMe\\third_party\\ycmd",
 "ycmd.confirm_extra_conf": true,
-"ycmd.global_extra_config": "F:\\WorkingDirectory\\Configuration\\common\\.ycm_extra_conf.py",
+"ycmd.global_extra_config": "F:\\WorkingDirectory\\Configuration\\common\\_ycm_extra_conf.py",
 "ycmd.python": "D:\\Python\\Python27\\python.exe",
 ```
 
