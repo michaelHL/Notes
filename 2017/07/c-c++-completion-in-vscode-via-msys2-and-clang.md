@@ -26,12 +26,12 @@ MSYS2 这个 Windows 下类的 Unix 系统毕竟有些庞大, 如果从实用角
 
 ### VSC零配置 - MSYS2 + C/C++ Clang Command Adapter
 
-### 原料
+#### 原料
 
 - [VSCode](https://code.visualstudio.com/)
 - [MSYS2](http://www.msys2.org/)
 
-### 步骤
+#### 步骤
 
 这里的 MSYS2 配置部分主要参考 [MSYS2开发环境搭建](http://blog.csdn.net/callinglove/article/details/48601775).
 
@@ -87,7 +87,7 @@ MSYS2 这个 Windows 下类的 Unix 系统毕竟有些庞大, 如果从实用角
        <img src="img/msys-vscode-clang-03.gif">
    </p>
 
-### 注记
+#### 注记
 
 之前尝试过分别下载 MinGW GCC、LLVM-Clang 进行配置,
 但发现一定情况下对 C++ 文件不提示, 于是干脆利用 MSYS2 直接对这些工具来个集成,
@@ -104,6 +104,6 @@ Clang                       | 4.0.0 posix
 
 推荐的版本组合为 LLVM 4.0.1 + MinGW 7.1.0.
 
-### 链接
+#### 链接
 
 - [Windows下VSCode利用Ctags实现C/C++文件进行跳转](../08/c-c++-code-navigation-by-ctags-on-windows.md)
