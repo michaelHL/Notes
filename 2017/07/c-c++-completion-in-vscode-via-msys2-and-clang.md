@@ -75,6 +75,14 @@ C/C++ Clang Command Adapter | 0.2.2
 GCC                         | (Rev2, Built by MSYS2 project) 7.1.0
 Clang                       | 4.0.0 posix
 
+### 更新
+
+MSYS2 这个类 Unix 系统毕竟有些庞大, 如果从实用角度出发,
+只下载 LLVM, 完全可以做到提示当前项目的各种函数, 在 VSCode 中设置 Clang 路径即可;
+但如果要提示系统库函数, 可考虑自行下载 MinGW GCC, 并在插件中的 `cflag`,
+`cxxflag` 中添加 `include` 路径(如 `-I/usr/include`),
+这里推荐的版本组合为 LLVM 4.0.1 + MinGW 7.1.0.
+
 ### 链接
 
 - [Windows下VSCode利用Ctags实现C/C++文件进行跳转](../08/c-c++-code-navigation-by-ctags-on-windows.md)
