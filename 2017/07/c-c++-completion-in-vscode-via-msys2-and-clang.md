@@ -77,11 +77,25 @@ Clang                       | 4.0.0 posix
 
 ### 更新
 
-MSYS2 这个类 Unix 系统毕竟有些庞大, 如果从实用角度出发,
-只下载 LLVM, 完全可以做到提示当前项目的各种函数, 在 VSCode 中设置 Clang 路径即可;
+MSYS2 这个 Windows 下类的 Unix 系统毕竟有些庞大, 如果从实用角度出发,
+只下载 LLVM, 完全可以做到提示当前项目的各种函数, 在 VSCode 中设置 Clang 路径即可,
 但如果要提示系统库函数, 可考虑自行下载 MinGW GCC, 并在插件中的 `cflag`,
-`cxxflag` 中添加 `include` 路径(如 `-I/usr/include`),
-这里推荐的版本组合为 LLVM 4.0.1 + MinGW 7.1.0.
+`cxxflag` 中添加 `include` 路径, 下面是可行的配置(自行修改库头文件路径):
+
+```json
+{
+    "clang.diagnostic.enable": false,
+    "clang.executable": "E:\\LLVM\\x86\\bin\\clang.exe",
+    "clang.cflags": [
+        "-std=c99",
+        "-IE:\\MinGW\\i686-5.4.0-release-posix-dwarf-rt_v5-rev0\\mingw32\\i686-w64-mingw32\\include",
+        "-IE:\\MinGW\\i686-5.4.0-release-posix-dwarf-rt_v5-rev0\\mingw32\\include",
+        "-IE:\\MinGW\\i686-5.4.0-release-posix-dwarf-rt_v5-rev0\\mingw32\\lib\\gcc\\i686-w64-mingw32\\5.4.0\\include"
+    ]
+}
+```
+
+推荐的版本组合为 LLVM 4.0.1 + MinGW 7.1.0.
 
 ### 链接
 
