@@ -1,6 +1,6 @@
 ## Windows 下 VSCode 利用 Clang 对 C/C++ 进行补全
 
-### 更新
+### 更新 - LLVM + MinGW GCC + C/C++ Clang Command Adapter
 
 MSYS2 这个 Windows 下类的 Unix 系统毕竟有些庞大, 如果从实用角度出发,
 只下载 [LLVM](http://releases.llvm.org/download.html) 以及
@@ -23,6 +23,8 @@ MSYS2 这个 Windows 下类的 Unix 系统毕竟有些庞大, 如果从实用角
 ```
 
 ---
+
+### VSC零配置 - MSYS2 + C/C++ Clang Command Adapter
 
 ### 原料
 
