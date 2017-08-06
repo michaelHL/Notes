@@ -1,6 +1,6 @@
 ## Vim 中使用 GNU GLOBAL 作为代码跳转工具
 
-### 安装 [GNU GLOBAL](https://www.gnu.org/software/global)工具
+### 安装 [GNU GLOBAL](https://www.gnu.org/software/global) 工具
 
 - **MSYS2**
   ```
