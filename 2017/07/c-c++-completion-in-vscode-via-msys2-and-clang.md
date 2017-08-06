@@ -6,8 +6,8 @@ MSYS2 这个 Windows 下类的 Unix 系统毕竟有些庞大, 如果从实用角
 只下载 [LLVM](http://releases.llvm.org/download.html) 以及
 [C/C++ Clang Command Adapter](https://github.com/mitaki28/vscode-clang),
 完全可以做到提示当前项目的各种函数, 在 VSCode 中设置 Clang 路径即可,
-但如果要提示系统库函数, 可考虑自行下载 MinGW GCC, 并在插件中的 `cflag`,
-`cxxflag` 中添加 `include` 路径, 下面是可行的配置(自行修改库头文件路径):
+但如果要提示系统库函数, 可考虑自行下载 MinGW GCC, 并在插件中的 `clang.cflags`,
+`clang.cxxflags` 中包含头文件路径, 下面是可行的配置(自行修改头文件路径):
 
 ```json
 {
