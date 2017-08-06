@@ -1,14 +1,14 @@
-## 利用VSCode搭建简易C&C++编译环境
+## 利用 VSCode 搭建简易 C&C++ 编译环境
 
-### 1. MinGW GCC工具链
+### 1. MinGW GCC 工具链
 
 - (可参考之前的gist: [eclipse配置C/C++编译环境](https://gist.github.com/michaelHL/8b5e18b0d3d3319d49b7998bb7de052a))
-- 老版本[MinGW](http://www.mingw.org/)仅有`32`位的Tool Chain,
-  若需要编译`64`位程序, 转至[MinGW-w64](https://sourceforge.net/projects/mingw-w64/)项目(**推荐**)
-- 以`MinGW GCC 5.4.0 x86`为例, 依次在[Files](https://sourceforge.net/projects/mingw-w64/files)界面选择`Toolchains targetting Win32`,
+- 老版本 [MinGW](http://www.mingw.org/)仅有 32 位的Tool Chain,
+  若需要编译 64 位程序, 转至 [MinGW-w64](https://sourceforge.net/projects/mingw-w64/)项目(**推荐**)
+- 以`MinGW GCC 5.4.0 x86`为例, 依次在 [Files](https://sourceforge.net/projects/mingw-w64/files)界面选择`Toolchains targetting Win32`,
   `Personal Builds`, `mingw-builds`, `5.4.0`, `threads-posix`,
   `dwarf`, `i686-5.4.0-release-posix-dwarf-...`进行下载.
-  类似可下载`64`位以及其他版本的工具链(seh, dwarf, sjlj等)  
+  类似可下载 64 位以及其他版本的工具链(seh, dwarf, sjlj等)  
   直链: [i686-5.4.0-release-posix-dwarf-rt_v5-rev0.7z](https://sourceforge.net/projects/mingw-w64/files/Toolchains%20targetting%20Win32/Personal%20Builds/mingw-builds/5.4.0/threads-posix/dwarf/i686-5.4.0-release-posix-dwarf-rt_v5-rev0.7z/download)
 - 解压:
   <p align="center">
@@ -42,7 +42,7 @@
 
    当然参数可以进一步定制.
    除此之外, 还可以有如下自定义设置以获更佳体验
-   (注意`json`语法)
+   (注意 `json` 语法)
 
     ```json
     {

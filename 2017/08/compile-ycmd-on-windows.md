@@ -23,7 +23,7 @@
 
 为防止环境路径干扰, 暂时删除 MSYS2 的两个环境路径( `/mingw64/bin`,
 `/usr/bin` 包含 `clang`, `cmake` 和 `python`), 加入刚才安装的 Cmake 路径
-(Python, Clang 的路径并不需要). Git 下载时挂了ss, 注意应使用 `http` 协议下载.
+(Python, Clang 的路径并不需要). Git 下载时挂了 ss, 注意应使用 `http` 协议下载.
 下面一套动作即可完成编译(`cmd` 中):
 
 ```bash

@@ -1,13 +1,13 @@
-## CentOS服务器使用Nginx部署Hexo博客并利用Webhook自动更新
+## CentOS 服务器部署 Hexo 博客并利用 Webhook 自动更新
 
-### 1. 部署本地Hexo博客以及同步到Github
+### 1. 部署本地 Hexo 博客以及同步到 Github
 
 #### 安装
 
 [Hexo, A fast, simple & powerful blog framework.](https://hexo.io/)
 
-根据Hexo官网的介绍, 首先要安装 `Git` 以及 `Nodejs`,
-CentOS系统下直接 `yum` 安装即可:
+根据 Hexo 官网的介绍, 首先要安装 `Git` 以及 `Nodejs`,
+CentOS 系统下直接 `yum` 安装即可:
 
 ```sh
 yum install git
@@ -49,7 +49,7 @@ timezone:
 
 #### 服务器
 
-这里是按照Hexo官网的介绍摘过来的, 应是类似于本机查看渲染效果,
+这里是按照 Hexo 官网的介绍摘过来的, 应是类似于本机查看渲染效果,
 但由于在服务器端, 感觉用不上.
 
 安装 `hexo-server` 包:
@@ -64,7 +64,7 @@ npm install hexo-server --save
 hexo server
 ```
 
-网站就会在 `http://localhost:4000` 下启动, 并且Hexo会监视文件变动并更新,
+网站就会在 `http://localhost:4000` 下启动, 并且 Hexo 会监视文件变动并更新,
 如需改变端口或遇到 `EADDRINUSE` 错误, 加上 `-p` 参数并指定端口:
 
 ```sh
@@ -93,7 +93,7 @@ deploy:
   branch: master
 ```
 
-**注** 这里将Github上的仓库命名为 `blog`, 与后文中本地仓库名相同.
+**注** 这里将 Github 上的仓库命名为 `blog`, 与后文中本地仓库名相同.
 
 直接利用 `hexo deploy` 或 `hexo d` 直接push到Github上.
 生成静态文件与同步可以合为一步(两者作用相同):

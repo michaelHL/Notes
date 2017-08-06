@@ -39,10 +39,10 @@ int main() {
 又计算了一次 `sum += num`, 导致结果错误. 所以强制刷新缓冲区或者利用 `getchar`
 可以解决这个问题.
 
-不过 `fflush(stdin)` 在除Windows外的其他平台上是未定义行为,
+不过 `fflush(stdin)` 在除 Windows 外的其他平台上是未定义行为,
 所以寻找更有效的解决方案.
 
-参考链接: 
+参考链接:
 
 - [Why is scanf() causing infinite loop in this code?](https://stackoverflow.com/questions/1716013/why-is-scanf-causing-infinite-loop-in-this-code)
 - [Using fflush(stdin)](https://stackoverflow.com/questions/2979209/using-fflushstdin)
@@ -51,7 +51,7 @@ int main() {
 ### 清空输入流
 
 由于标准输入流 `stdin` 及 标准输出流 `stdout` 为行缓冲,
-所以一般输入用 <kbd>enter</kbd> 来push输入缓冲区的数据至输入流,
+所以一般输入用 <kbd>enter</kbd> 来 push 输入缓冲区的数据至输入流,
 但 `fflush` 一般作用于 `stdout`, 也就是常用的手动输出 `stdout` 的内容.
 
 参考

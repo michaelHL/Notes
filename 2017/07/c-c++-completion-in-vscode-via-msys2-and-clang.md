@@ -1,4 +1,4 @@
-## Windows下VSCode利用Clang对C/C++进行补全
+## Windows 下 VSCode 利用 Clang 对 C/C++ 进行补全
 
 ### 原料
 
@@ -7,15 +7,15 @@
 
 ### 步骤
 
-这里的 MSYS2 配置部分主要参考 「[MSYS2开发环境搭建](http://blog.csdn.net/callinglove/article/details/48601775)」.
+这里的 MSYS2 配置部分主要参考 [MSYS2开发环境搭建](http://blog.csdn.net/callinglove/article/details/48601775).
 
 1. 下载 MSYS2 installer, 建议安装路径不包含空格(个人装在了 `D:` 下)
    <p align="center">
        <img src="img/msys-vscode-clang-01.png">
    </p>
 
-1. 修改软件源, 修改 `/etc/pacman.d/` 目录下的三个文件, 换上清华的repo,
-   `.msys`, `.mingw32`, `.mingw64` 分别对应 `MSYS2` 里的三套系统,
+1. 修改软件源, 修改 `/etc/pacman.d/` 目录下的三个文件, 换上清华的 repo,
+   `.msys`, `.mingw32`, `.mingw64` 分别对应 MSYS2 里的三套系统,
    **分别**在三个文件最上方填写(注意对应):
 
    ```
@@ -47,8 +47,8 @@
    pacman -S gcc
    pacman -S mingw-w64-x86_64-toolchain
    pacman -S mingw-w64-i686-toolchain
-   pacman -S mingw64/mingw-w64-x86_64-clang 
-   pacman -S mingw32/mingw-w64-i686-clang 
+   pacman -S mingw64/mingw-w64-x86_64-clang
+   pacman -S mingw32/mingw-w64-i686-clang
    ```
 
 1. 将 `/mingw64/bin` 加入系统环境变量(或者 `/mingw32/bin` )
@@ -63,7 +63,7 @@
 
 ### 注记
 
-之前尝试过分别下载 MinGW GCC、LLVM-Clang进行配置,
+之前尝试过分别下载 MinGW GCC、LLVM-Clang 进行配置,
 但发现一定情况下对 C++ 文件不提示, 于是干脆利用 MSYS2 直接对这些工具来个集成,
 一来方便管理, 二来无需对 VSCode 进行过多的配置. 测试环境的各版本如下:
 

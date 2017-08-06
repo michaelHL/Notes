@@ -16,7 +16,7 @@ cat cat.txt
 ```
 [xxx]$ cat cat.txt
 In sleep he sang to me
-[xxx]$ 
+[xxx]$
 ```
 
 由于敲完一行后进行了回车, 所以不能排除这个 `\n` 是人为加上去的可能,
@@ -84,9 +84,9 @@ DESCRIPTION
 
 #### MSYS2 开发环境
 
-首先在 MSYS2 的环境下, 重复上面在Linux下的操作,
+首先在 MSYS2 的环境下, 重复上面在 Linux 下的操作,
 新建文件 `cat.txt`, `vim.txt`, `vim_no_eof.txt`,
-再分别 `cat`, 出现的结果Linux下情况相同. 利用Notepad++查看不可见字符,
+再分别 `cat`, 出现的结果 Linux 下情况相同. 利用 Notepad++ 查看不可见字符,
 发现 `vim.txt` 以及 `cat.txt` 末尾均含有 `LF` 字样, 即 `\n`.
 
 现利用程序输出文件:
@@ -111,7 +111,7 @@ In sleep he sang to me
 In dreams he came[xxx]$
 ```
 
-将输出导出至文件, 利用Notepad++查看文件:
+将输出导出至文件, 利用 Notepad++ 查看文件:
 
 ```
 In sleep he sang to me<LF>
@@ -120,7 +120,7 @@ In dreams he came
 
 #### MinGW-W64 环境
 
-输出本机 `gcc` 配置:
+输出本机 GCC 配置:
 
 ```
 gcc (i686-posix-dwarf-rev0, Built by MinGW-W64 project) 5.4.0
@@ -129,7 +129,7 @@ This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ```
 
-同样执行同 MSYS2 环境中操作(终端变成了lowbie的`cmd`),
+同样执行同 MSYS2 环境中操作(终端变成了 lowbie 的`cmd`),
 发现结果竟然变的「正常」:
 
 ```
@@ -138,15 +138,15 @@ In dreams he came
 xxx>
 ```
 
-但如果在 MSYS2 的终端("mintty")中运行, 仍然在最后一行不存在换行符,
-由此可见这锅该 `cmd` 背. 输出到文件, 在Notepad++里面观察:
+但如果在 MSYS2 的终端 `mintty` 中运行, 仍然在最后一行不存在换行符,
+由此可见这锅该 `cmd` 背. 输出到文件, 在 Notepad++ 里面观察:
 
 ```
 In sleep he sang to me<CR><LF>
 In dreams he came
 ```
 
-完全符合DOS下的换行标准.
+完全符合 DOS 下的换行标准.
 
 ### 在程序中输出文件
 
@@ -191,13 +191,13 @@ int main(void) {
 
 #### Windows下
 
-- MSYS2 环境下的表现与Linux下完全相同
+- MSYS2 环境下的表现与 Linux 下完全相同
 - MinGW-W64 环境下, 将 `w+` 换成 `w+b`, 在 Notepad++ 视图中发现,
   后者的文件与Linux下相同, 即显示 `LF` 而不是 `CR` `LF`.
 
-作为扩展, 输出更多的行, 分别在Linux下和 MinGW-W64 环境下进行试验,
-发现在二进制模式下, MinGW-W64 环境的表现与Linux相同,
-同时输出的文本在Notepad打开时会连成一片, 因为 `CR` `LF` 的缘故.
+作为扩展, 输出更多的行, 分别在 Linux 下和 MinGW-W64 环境下进行试验,
+发现在二进制模式下, MinGW-W64 环境的表现与 Linux 相同,
+同时输出的文本在 Notepad 打开时会连成一片, 因为 `CR` `LF` 的缘故.
 
 ---
 
@@ -206,14 +206,14 @@ int main(void) {
 1. Linux将 `\n` 视作 `newline`, 也就是说,
    当Linux下的程序遇到一个 `\n`, 便会认为读了一行,
    下面读取的内容就是作为新的一行(newline);
-   Windows下的 `\r\n` 相当于Linux下的 `\n`,
-   所以Windows自带的Notepad在打开以 `\n`
+   Windows 下的 `\r\n` 相当于Linux下的 `\n`,
+   所以 Windows 自带的 Notepad 在打开以 `\n`
    为换行符的文件时会不知道从何处开始为新的一行, 所以连成一片.
-   不过可以通过Notepad++、Sublime Text等机智的文本编辑器来判断文本文件类型.
+   不过可以通过 Notepad++, Sublime Text 等机智的文本编辑器来判断文本文件类型.
 2. 通过 `printf`, 编译器会自动处理 newline 符号,
-   所以在Windows下, 即便在 `printf` 中输出 `\n`,
+   所以在 Windows 下, 即便在 `printf` 中输出 `\n`,
    通过输出文件可知 `\n` 被转换成了 `\r\n`.
 3. 如果在文件读写函数中将模式改为二进制模式, 这对Linux没有任何影响,
-   因为这两个模式在Linux下是无差异的, 而在Windows下,
+   因为这两个模式在 Linux 下是无差异的, 而在 Windows 下,
    模式中加上 `b`, 程序会忠诚地原样输出字符.
    所以二进制模式中, `printf` 中的 `\n` 需要手动换为 `\r\n` 才符合 Win-Style.

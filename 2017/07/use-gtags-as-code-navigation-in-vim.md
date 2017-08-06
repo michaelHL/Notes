@@ -1,6 +1,6 @@
-## Vim中使用GNU GLOBAL作为代码跳转工具
+## Vim 中使用 GNU GLOBAL 作为代码跳转工具
 
-### 安装[GNU GLOBAL](https://www.gnu.org/software/global)OBAL工具
+### 安装[GNU GLOBAL](https://www.gnu.org/software/global)工具
 
 - **MSYS2**
   ```
@@ -13,7 +13,7 @@
 
 ### 生成taglist
 
-如果要生成C/C++文件的tag, `cd` 至 `/usr/include` 目录下,
+如果要生成 C / C++ 文件的tag, `cd` 至 `/usr/include` 目录下,
 直接执行 `gtags` 即可, 会在当前目录下生成三个文件 `GPATH`, `GRTAGS`, `GTAGS`.
 在 `~/.bashrc` 中添加环境变量
 
@@ -21,7 +21,7 @@
 export GTAGSLIBPATH=$GTAGSLIBPATH:/usr/include/
 ```
 
-当然当前目录/工程也需要 `gtag`, 才能相互跳转.
+当然当前目录/工程也需要 `gtags`, 才能相互跳转.
 
 ### Vim设置
 
