@@ -89,9 +89,9 @@ MSYS2 这个 Windows 下类的 Unix 系统毕竟有些庞大, 如果从实用角
     "clang.executable": "E:\\LLVM\\x86\\bin\\clang.exe",
     "clang.cflags": [
         "-std=c99",
-        "-IE:\\MinGW\\i686-5.4.0-release-posix-dwarf-rt_v5-rev0\\mingw32\\i686-w64-mingw32\\include",
-        "-IE:\\MinGW\\i686-5.4.0-release-posix-dwarf-rt_v5-rev0\\mingw32\\include",
-        "-IE:\\MinGW\\i686-5.4.0-release-posix-dwarf-rt_v5-rev0\\mingw32\\lib\\gcc\\i686-w64-mingw32\\5.4.0\\include"
+        "-IE:\\MinGW\\i686-5.4.0\\mingw32\\i686-w64-mingw32\\include",
+        "-IE:\\MinGW\\i686-5.4.0\\mingw32\\include",
+        "-IE:\\MinGW\\i686-5.4.0\\mingw32\\lib\\gcc\\i686-w64-mingw32\\5.4.0\\include"
     ]
 }
 ```
