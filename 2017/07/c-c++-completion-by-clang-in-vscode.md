@@ -22,6 +22,8 @@ MSYS2 这个 Windows 下类的 Unix 系统毕竟有些庞大, 如果从实用角
 }
 ```
 
+推荐的版本组合为 LLVM 4.0.1 + MinGW 7.1.0.
+
 ---
 
 ### VSC零配置 - MSYS2 + C/C++ Clang Command Adapter
@@ -101,8 +103,6 @@ C/C++ Clang Command Adapter | 0.2.2
 GCC                         | (Rev2, Built by MSYS2 project) 7.1.0
 Clang                       | 4.0.0 posix
 
-
-推荐的版本组合为 LLVM 4.0.1 + MinGW 7.1.0.
 
 #### 链接
 

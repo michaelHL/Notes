@@ -2,7 +2,7 @@
 
 之前写了篇 [Windows 下 VSCode 利用 Clang 对 C/C++ 进行补全](../07/c-c++-completion-in-vscode-via-msys2-and-clang.md),
 但谈到C/C++文件的跳转问题, 官方的插件 [C/C++](https://github.com/Microsoft/vscode-cpptools/issues)
-实在不敢恭维, 光代码提示出来一大堆无用的东西不说,
+虽然支持跳转, 但附带的补全功能实在不敢恭维, 光代码提示出来一大堆无用的东西不说,
 每次打开 C/C++ 文件都会先烧 CPU 一刻钟在说, 看
 [issues](https://github.com/Microsoft/vscode-cpptools/issues/785#issuecomment-308880006)
 发现这个插件会在后台一直 parse, 应该是为 debug服务的, 但是并用不到这个功能,
