@@ -10,14 +10,7 @@ export LESS_TERMCAP_so=$(printf '\e[01;33m') # enter standout mode - yellow
 export LESS_TERMCAP_ue=$(printf '\e[0m') # leave underline mode
 export LESS_TERMCAP_us=$(printf '\e[04;36m') # enter underline mode - cyan
 
-
-# proxy
-export http_proxy="http://192.168.0.105:1888/"
-export https_proxy="https://192.168.0.105:1888/"
-export ftp_proxy="ftp://192.168.0.105:1888/"
-
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/anaconda3/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=/home/heller/.oh-my-zsh
