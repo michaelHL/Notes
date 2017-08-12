@@ -36,7 +36,7 @@ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/theme
 
 ### 配置 `.zshrc`
 
-见 [`.zshrc`][src/.zshrc]
+见 [`.zshrc`](src/.zshrc)
 
 
 [oh-my-zsh-repo]: https://github.com/robbyrussell/oh-my-zsh
