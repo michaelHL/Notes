@@ -38,6 +38,14 @@ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/theme
 
 见 [`.zshrc`](src/.zshrc)
 
+---
+
+秀一发:
+
+<p align="center">
+  <img src="img/zsh-on-xshell.png">
+</p>
+
 
 [oh-my-zsh-repo]: https://github.com/robbyrussell/oh-my-zsh
 [oh-my-zsh-wiki]: https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH
