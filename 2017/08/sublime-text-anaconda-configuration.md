@@ -45,4 +45,4 @@
 
 [Anaconda Python Builder can't print Chinese characters in Sublime Text 3 Terminal][anaconda-issue-431]
 
-[anaconda-issue-431]: https://github.com/DamnWidget/anaconda/issues/431"
+[anaconda-issue-431]: https://github.com/DamnWidget/anaconda/issues/431
