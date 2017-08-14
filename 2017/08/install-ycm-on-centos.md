@@ -76,7 +76,7 @@ set completeopt=longest,menu
   路径即可:
 
   ```vim
-  let g:ycm_server_python_interpreter = '/usr/bin/python2'`
+  let g:ycm_server_python_interpreter = '/usr/bin/python2'
   ```
 
 ### 致谢
