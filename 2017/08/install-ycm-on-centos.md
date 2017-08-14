@@ -34,7 +34,13 @@ strings /usr/lib64/libstdc++.so.6 | grep GLIBC
 ```
 
 这个步骤之前如果输最后一个命令会发现 `GLIBCXX` 最高的版本号为 `3.4.19`,
-而 Clang 3.9.0 已经需要至少 `3.4.20` 的 `libstdc++`, 所以有了上述操作.
+而 Clang 4.0.1 已经需要至少 `3.4.20` 的 `libstdc++`, 所以有了上述操作.
+
+可能需要查看下 `cc` 以及 `c++` 的版本, 看他们是否指向正确:
+```bash
+ln -s /usr/local/bin/gcc /usr/bin/cc
+ln -s /usr/local/bin/g++ /usr/bin/c++
+```
 
 ### 编译YCM
 
@@ -45,15 +51,22 @@ cd YouCompleteMe
 git submodule update --init --recursive
 mkdir -p ~/ycm_temp/
 cd ~/ycm_temp/
-wget http://releases.llvm.org/3.9.0/clang+llvm-3.9.0-x86_64-linux-gnu-debian8.tar.xz
-tar -xvf clang+llvm-3.9.0-x86_64-linux-gnu-debian8.tar.xz
+wget http://releases.llvm.org/4.0.1/clang+llvm-4.0.1-x86_64-linux-gnu-debian8.tar.xz
+tar -xvf clang+llvm-4.0.1-x86_64-linux-gnu-debian8.tar.xz
 mkdir -p ~/ycm_build
 cd ~/ycm_build
-cmake -G "Unix Makefiles" -DPATH_TO_LLVM_ROOT=~/ycm_temp/clang+llvm-3.9.0-x86_64-linux-gnu-debian8 . ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp
+cmake -G "Unix Makefiles" \
+-DPATH_TO_LLVM_ROOT=~/ycm_temp/clang+llvm-4.0.1-x86_64-linux-gnu-debian8 \
+-DPYTHON_INCLUDE_DIR=/usr/include/python3.4m \
+-DPYTHON_LIBRARY=/usr/lib64/libpython3.so \
+-DUSE_PYTHON2=OFF \
+. ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp
 cmake --build . --target ycm_core
 ```
 
-YCM分步下载, 下载 3.9.0 版本的 Clang, 再利用其编译.
+YCM分步下载, 下载 4.0.1 版本的 Clang, 再利用其编译,
+这里的 `cmake` 很有学问, 自定义了 `python` 的版本 (`3.4`) 以及 LLVM
+的位置.
 
 ### C-family的语义分析支持
 
@@ -64,20 +77,21 @@ YCM分步下载, 下载 3.9.0 版本的 Clang, 再利用其编译.
 记得在插件区中加入 `Plugin 'Valloric/YouCompleteMe'`.
 
 ```vim
-let g:ycm_global_ycm_extra_conf='~/.ycm_extra_conf.py'
-let g:ycm_seed_identifiers_with_syntax = 1
+let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
 let g:ycm_confirm_extra_conf = 0
+let g:ycm_seed_identifiers_with_syntax = 1
+let g:ycm_server_python_interpreter = '/usr/bin/python3'
 set completeopt=longest,menu
+let g:ycm_semantic_triggers = {
+\ 'c' : ['->', '.', ' ', '(', '[', '&'],
+\ 'cpp,objcpp' : ['->', '.', ' ', '(', '[', '&', '::'],
+\ 'perl' : ['->', '::', ' '],
+\ 'php' : ['->', '::', '.'],
+\ 'cs,java,javascript,d,vim,python,perl6,scala,vb,elixir,go' : ['.'],
+\ 'ruby' : ['.', '::'],
+\ 'lua' : ['.', ':']
+\ }
 ```
-
-### 额外问题
-
-- 一定概率碰到提示 `python interpreter` 的问题, 在 `.vimrc` 设置 `python`
-  路径即可:
-
-  ```vim
-  let g:ycm_server_python_interpreter = '/usr/bin/python2'
-  ```
 
 ### 致谢
 
