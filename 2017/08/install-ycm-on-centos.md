@@ -21,7 +21,7 @@ make install
 ```
 
 这个 `make` 的过程耗费了1个小时, 当然还有个小坑: 记得安装 `bzip2`,
-记得 `.tar.xz` 文件用 `tar -zxvf` 解压, `tar.bz2` 用 `tar -jxvf` 解压.
+记得 `.tar.xz` 文件用 `tar -zxvf` 解压, `.tar.bz2` 用 `tar -jxvf` 解压.
 
 ### 更新libstdc++
 
