@@ -102,3 +102,4 @@ let g:ycm_semantic_triggers = {
 - [Linux下GLIBCXX和GLIBC版本低造成的编译错误的解决方案](http://blog.csdn.net/officercat/article/details/39519265)
 - [Centos7安装vim8.0 + YouCompleteMe](http://blog.csdn.net/nzyalj/article/details/75331822)
   - 该博主利用 `devtoolset` 来更新 GCC 版本, 不过在测试中无效
+- [打造VIM利器](http://www.jianshu.com/p/e9cb158f7048)
