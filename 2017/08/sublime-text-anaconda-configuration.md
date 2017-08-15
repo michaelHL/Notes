@@ -7,11 +7,14 @@
     "build_systems":
     [
         {
+            "env":
+            {
+                "PYTHONIOENCODING": "UTF-8"
+            },
             "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
             "name": "Anaconda Python Builder",
             "selector": "source.python",
-            "shell_cmd": "\"D:\\Anaconda3\\envs\\workspace\\python.exe\" -u \"$file\"",
-            "env": {"PYTHONIOENCODING": "UTF-8"}
+            "shell_cmd": "\"D:\\Anaconda3\\envs\\workspace\\python.exe\" -u \"$file\""
         }
     ],
     "folders":
@@ -35,6 +38,28 @@
         "python_interpreter": "D:\\Anaconda3\\envs\\workspace\\python.exe",
         "test_command": "D:\\Anaconda3\\Scripts\\nosetests"
     }
+}
+```
+
+插件设置:
+
+```json
+{
+    "pep8_ignore": ["E501", "W292", "E303", "W391", "E111", "E114",
+                    "E121", "E201", "E202", "E122", "E116", "E225",
+                    "E251", "E261", "E272", "E302", "W293", "E402"],
+    "pyflakes_explicit_ignore":
+    [
+        "UnusedImport"
+    ],
+    "auto_formatting": true,
+    "anaconda_linting": false,
+    "suppress_word_completions": false,
+    "suppress_explicit_completions": false,
+    "enable_signatures_tooltip": true,
+    "merge_signatures_and_doc":true,
+    "complete_parameters": false,
+    "complete_all_parameters": false,
 }
 ```
 
