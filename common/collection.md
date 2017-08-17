@@ -3,7 +3,6 @@
 - **Vim**
     - [Code Rush](http://foocoder.com)
     - [arabesque](https://sanctum.geek.nz/arabesque)
-- 科大 http://jcf94.com
 - 书单 https://github.com/EbookFoundation/free-programming-books
 - 博客
     - [岁月如歌](http://lovenight.github.io)
