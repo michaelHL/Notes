@@ -13,4 +13,4 @@
   `HandleLidSwitch=lock`, 并运行下列命令才生效:
   `systemctl restart systemd-logind`
 - 解压 `.bz2` 文件失败: `yum install install bzip2`
-
+- 控制台下配置基本网络连接工具: `nmtui` (curses-based text user interface).
