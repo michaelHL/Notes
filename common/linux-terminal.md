@@ -50,3 +50,5 @@
      ```
      service sshd restart
      ```
+   - 服务端禁用 `GSSAPIAuthentication`: 同样在 `/etc/ssh/sshd_config`
+     中设定  `GSSAPIAuthentication no`
