@@ -6,7 +6,7 @@
    输入内容: `set completion-ignore-case on`
 1. `history`不显示连续、重复、特定的命令、加上时间戳.  
    于`/etc/bashrc`(或`~/.bashrc`)中添加
-   ```
+   ```bash
    HISTTIMEFORMAT='%F %T '
    HISTCONTROL=erasedups
    HISTIGNORE="ls:pwd:cd:clear:vim:fg:bg:jobs:top"
@@ -30,11 +30,16 @@
    注: 上述所有的「移动」均可认为处于Insert模式, 即光标相当于block在左边.
 1. `xargs` 处理带有空格文件名文件的问题.  
    比如下列命令对于空格文件名是会出问题的:
-   ```
+   ```bash
    find . -iname "*.mp3" -print | xargs mplayer
    ```
    改用:
-   ```
+   ```bash
    find . -iname "*.mp3" -print0 | xargs -0 -I mp3file mplayer mp3file
    ```
-
+1. SSH 登录服务器缓慢解决方案:
+   - 关闭 DNS 反向解析:
+     ```bash
+     # vim /etc/ssh/sshd_config
+     UseDNS=no
+     ```
