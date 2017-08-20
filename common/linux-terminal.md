@@ -40,6 +40,13 @@
 1. SSH 登录服务器缓慢解决方案:
    - 关闭 DNS 反向解析:
      ```bash
-     # vim /etc/ssh/sshd_config
+     vim /etc/ssh/sshd_config
+     ```
+     设定其中
+     ```bash
      UseDNS=no
+     ```
+     重启服务
+     ```
+     service sshd restart
      ```
