@@ -7,10 +7,7 @@
     "build_systems":
     [
         {
-            "env":
-            {
-                "PYTHONIOENCODING": "UTF-8"
-            },
+            "env": { "PYTHONIOENCODING": "UTF-8" },
             "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
             "name": "Anaconda Python Builder",
             "selector": "source.python",
