@@ -7,8 +7,8 @@
     "build_systems":
     [
         {
-            "env": { "PYTHONIOENCODING": "UTF-8" },
             "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+            "env": { "PYTHONIOENCODING": "UTF-8" },
             "name": "Anaconda Python Builder",
             "selector": "source.python",
             "shell_cmd": "\"D:\\Anaconda3\\envs\\workspace\\python.exe\" -u \"$file\""
