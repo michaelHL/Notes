@@ -62,3 +62,12 @@
    ```
    tlmgr option repository http://mirrors.aliyun.com/CTAN/systems/texlive/tlnet
    ```
+1. Sublime Text 插件 SublimeREPL 出现
+   `OSError: [WinError 6] The handle is invalid` 解决方案:
+   `Data/Packages/SublimeREPL/repls/subprocess_repl.py`
+   ```
+   def is_alive(self):
+       return True
+   ```
+
+
