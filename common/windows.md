@@ -1,37 +1,37 @@
 ## Windows 相关
 
-1. [JetBrains, ideavim] `vim` 配置文件放在 `~/.ideavimrc`
-1. [Office, Acces] 自动切换输入法修复方法:
+1. JetBrains 的 `vim` 插件配置文件放在 `~/.ideavimrc`
+1. MS Acces 自动切换输入法修复方法:
    Options -> Client Settings -> Datasheet IME control
-1. [OS]
+1. 恶心的 `Connected User Experiences and Telemetry`:
     1. 打开计划任务程序, 定位到 Microsoft-Windows-Application Experience,
         禁用 Microsoft Compatibility Appraiser
     2. 打开服务, 禁用 Connected User Experiences and Telemetry
     3. 以上步骤适用于 1607 版
-1. [OS, OneDrive]
+1. 卸载 OneDrive:
     1. 不让 OneDrive 弹出: <kbd>win</kbd><kbd>x</kbd><kbd>a</kbd>
        -> `taskkill /f /im OneDrive.exe`
     2. `%SystemRoot%\SysWOW64\OneDriveSetup.exe /uninstall` (注意系统位)
-1. [Moba, Cygwin, mirror]
+1. MobaXterm 中设置 Cygwin 的源
     - `apt-cyg -m http://mirrors.neusoft.edu.cn/cygwin/ install/remove. ...`
     - `apt-cyg -m http://mirrors.ustc.edu.cn/cygwin/ install/remove ...`
     - `apt-cyg -m http://mirrors.aliyun.com/cygwin/ install/remove ...`
     - `apt-cyg -m http://mirrors.163.com/cygwin/ install/remove ...`
-1. [Moba, Cygwin] 如果有命令出错, 有可能是版本过低.
-1. [Sublime Text, SFTP] SFTP 注册码: (在 `Settings-User` 中加入)
+1. MobaXterm 中的 Cygwin 如有命令出错, 有可能是版本过低.
+1. Sublime Text 插件 SFTP 注册码: (在 `Settings-User` 中加入)
     ```json
     {
         "email":"Rimke@163.com",
         "product_key":"e83eda-38644b-43c828-e3669b-cd8a85",
     }
     ```
-1. [Sublime Text, SublimeAStyleFormatter] AStyleFormatter报错:
+1. Sublime Text 插件 AStyleFormatter 报错:
    安装 Microsoft Visual C++ 2010 SP1 Redistributable Package (x64)
-1. [Sublime Text, Boxy]
+1. Sublime Text 主题插件 Boxy 深度定制:
     - `Boxy` 侧边栏背景色: `Sidebar Tree Defaults - "sidebar_tree"`
     - `Boxy` 侧边栏分隔: `"class": sidebar_container", "layer0.tint"`
-1. [Potplayer] 遇到「单声道」的情况, 将声音 - 环绕置 0 即可
-1. [美化] 任务栏透明: [StartIsBack](http://www.zdfans.com/5573.html)
+1. Potplayer 遇到「单声道」的情况, 将声音 - 环绕置 0 即可
+1. 任务栏透明: [StartIsBack](http://www.zdfans.com/5573.html)
 1. win 7 下一些控件、动态链接库无法注册问题的终极解决办法(**不推荐**):
    激活并登陆 `Administrator` 账户 (一定必须为该名称,
    即使为管理员账户也不能行使此账户的一些职权)
