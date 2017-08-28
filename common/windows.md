@@ -17,8 +17,6 @@
     - `apt-cyg -m http://mirrors.ustc.edu.cn/cygwin/ install/remove ...`
     - `apt-cyg -m http://mirrors.aliyun.com/cygwin/ install/remove ...`
     - `apt-cyg -m http://mirrors.163.com/cygwin/ install/remove ...`
-1. [Linux, RStudio-Server] `rstudio-server` 的 help 窗口用的 `R.css` 路径:
-   `/usr/lib/rstudio-server/resources`
 1. [Moba, Cygwin] 如果有命令出错, 有可能是版本过低.
 1. [Sublime Text, SFTP] SFTP 注册码: (在 `Settings-User` 中加入)
     ```json
@@ -32,11 +30,6 @@
 1. [Sublime Text, Boxy]
     - `Boxy` 侧边栏背景色: `Sidebar Tree Defaults - "sidebar_tree"`
     - `Boxy` 侧边栏分隔: `"class": sidebar_container", "layer0.tint"`
-1. [Linux, Shortcuts] <kbd>ctrl</kbd><kbd>s</kbd> 锁屏!
-   <kbd>ctrl</kbd><kbd>q</kbd> 可恢复
 1. [Potplayer] 遇到「单声道」的情况, 将声音 - 环绕置 0 即可
 1. [美化] 任务栏透明: [StartIsBack](http://www.zdfans.com/5573.html)
 
-
-==============待本地化==============
-[Linux下安装TexLive] http://seisman.info/install-texlive-under-linux.html

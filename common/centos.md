@@ -2,7 +2,8 @@
 
 1. 必要的EPEL包: `yum install -y epel-release`
 1. 查看CentOS系统realse版本: `cat /etc/readhat-release`
-1. 电源管理, 笔记本合盖子问题. 参考「Linux CentOS 7电源管理设置（合盖不睡眠）」(http://www.jianshu.com/p/f8f2692b1d7a)  
+1. 电源管理, 笔记本合盖子问题.
+   参考[Linux CentOS 7电源管理设置（合盖不睡眠）](http://www.jianshu.com/p/f8f2692b1d7a)  
    `systemd` 处理某些电源相关的ACPI事件，可以通过从 `/etc/systemd/logind.conf`
    以下选项进行配置:
    - `HandlePowerKey` 按下电源键后的行为，默认 `power off`
@@ -14,3 +15,7 @@
    `systemctl restart systemd-logind`
 1. 解压 `.bz2` 文件失败: `yum install install bzip2`
 1. 控制台下配置基本网络连接工具: `nmtui` (curses-based text user interface).
+1. `rstudio-server` 的 help 窗口用的 `R.css` 路径:
+   `/usr/lib/rstudio-server/resources`
+1. Xshell 下不小心按 Ctrl-S 假死: <kbd>ctrl</kbd><kbd>s</kbd> 锁屏!
+   <kbd>ctrl</kbd><kbd>q</kbd> 可恢复
