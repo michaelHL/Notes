@@ -16,8 +16,6 @@
 | Reset Spyder Settings | `D:\Anaconda3\python.exe D:\Anaconda3\cwp.py D:\Anaconda3 "D:/Anaconda3/python.exe" "D:/Anaconda3/Scripts/spyder-script.py" --reset` <br> `C:\Users\Michael`                      |
 | Spyder                | `D:\Anaconda3\pythonw.exe D:\Anaconda3\cwp.py D:\Anaconda3 "D:/Anaconda3/pythonw.exe" "D:/Anaconda3/Scripts/spyder-script.py"` <br> `"C:\Users\Michael\Documents\Python Scripts"` |
 
----
-
 ## 其他环境 (环境名为 `workspace` ):
 
 | Shortcuts             | Details                                                                                                                                                                                                                                  |
