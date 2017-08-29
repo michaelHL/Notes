@@ -10,3 +10,4 @@
    ```python
    # vim:fileencoding=<encoding-name>
    ```
+   文档搜索关键字: `Encoding declarations`

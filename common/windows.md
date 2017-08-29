@@ -68,6 +68,6 @@
    ```
    def is_alive(self):
        return True
-   ```
-
+  ```
+1. Sublime Text 开启 Debug 模式: `sublime.log_commands(True)`
 
