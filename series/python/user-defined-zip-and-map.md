@@ -31,3 +31,17 @@ def mymapPad(*seqs, pad=None):
 因为该函数的目的是「截断」, 所以是「短板效应」.
 而且 `mymapPad` 函数中, 应该试图一直「取下去」, 遇到没有元素的参数时,
 用 `pad` 进行填充 (默认是 `None`).
+
+同样, 上面的版本直接返回列表, 用 `yield` 版本返回生成器:
+
+```
+def myzip(*seqs):
+    seqs = [list(S) for S in seqs]
+    while all(seqs):
+        yield tuple(S.pop(0) for S in seqs)
+
+def mymapPad(*seq, pad=None):
+    seqs = [list(S) for S in seqs]
+    while any(seqs):
+        yield tuple((S.pop(0) if S else pad) for S in seqs)
+```
