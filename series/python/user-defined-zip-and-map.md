@@ -58,3 +58,11 @@ def mymapPad(*seqs, pad=None):
     return [tuple(S[i] if len(S) > i else pad for S in seqs)
             for i in range(maxlen)]
 ```
+
+最后一个版本是完全的生成器版本:
+
+```python
+def myzip(*seqs):
+    minlen = min(len(S) for S in seqs)
+    return (tuple(S[i] for S in seqs) for i in range(minlen))
+```
