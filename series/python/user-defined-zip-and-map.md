@@ -45,3 +45,16 @@ def mymapPad(*seq, pad=None):
     while any(seqs):
         yield tuple((S.pop(0) if S else pad) for S in seqs)
 ```
+
+因为循环次数可以事先被确定, 所以有如下不使用循环的版本:
+
+```python
+def myzip(*seqs):
+    minlen = min(len(S) for S in seqs)
+    return [tuple(S[i] for S in seqs) for i in range(minlen)]
+
+def mymapPad(*seqs, pad=None):
+    maxlen = max(len(S) for S in seqs)
+    return [tuple(S[i] if len(S) > i else pad for S in seqs)
+            for i in range(maxlen)]
+```
