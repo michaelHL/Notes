@@ -68,7 +68,7 @@
    ```
    def is_alive(self):
        return True
-  ```
+   ```
 1. Sublime Text 开启 Debug 模式: `sublime.log_commands(True)`
 1. 华丽的提示符: 添加环境变量 `PROMPT`,
    比如 `[ Nasty-Newbie $b $t $b $p ]$_$$ `.
