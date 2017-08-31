@@ -19,3 +19,8 @@
    `/usr/lib/rstudio-server/resources`
 1. Xshell 下不小心按 Ctrl-S 假死: <kbd>ctrl</kbd><kbd>s</kbd> 锁屏!
    <kbd>ctrl</kbd><kbd>q</kbd> 可恢复
+1. 升级 Python 后 `yum` 不能各种不能用:
+   - 建议升级 Python 的时候不要覆盖原来的 `/usr/bin/python2.7`,
+     当然系统可能也不允许这样的操作
+   - 将 `/usr/bin/yum` 以及 `/usr/libexec/urlgrabber-ext-down`
+     首行的 `python` 指向为 `/usr/bin/python2.7`
