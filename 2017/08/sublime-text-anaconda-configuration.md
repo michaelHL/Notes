@@ -61,7 +61,8 @@
 ```
 
 其中最重要的显中文的即为 `PYTHONIOENCODING` 的配置,
-网上关于在 `build_systems` 上面下功夫并没有什么用.
+网上关于在 `build_systems` 上面下功夫并没有什么用,
+**或者** 直接将 `PYTHONIOENCODING` 设置成环境变量.
 
 ### 参考
 
