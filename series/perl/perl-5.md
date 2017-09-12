@@ -27,3 +27,10 @@
 - `$#foo` 返回 `@foo` 的最大索引值
 - 数组内插到双引号串中时自动添加分隔用的空格, 空格这个分隔符的变量为 `$"`
 - `each` 操作符与 Python 中的 `enumerate` 相似, 会返回数组中的元素索引以及值
+- 强制指定标量上下文, 比如
+  ```perl
+  my @rocks = qw ! talc quartz jade obsidian !;
+  print "How many rocks do you have?\n";
+  print "I have ", @rocks, " rocks!\n";
+  print "I have ", scalar @rocks, " rocks!\n";
+  ```
