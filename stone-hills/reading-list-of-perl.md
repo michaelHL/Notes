@@ -4,7 +4,7 @@
 > 链接: [Perl语言学习书籍（持续整理）][link]  
 > 来源: [CSDN 博客][source]
 
-1. 「小骆驼」
+1. 「**小骆驼**」
 
    - 英: 「Learning Perl」, Randal L.Schwartz, brian d foy, Tom Phoenix 著
    - 中: 「Perl语言入门」, 盛春 译
@@ -13,7 +13,7 @@
    系列教程的第一本书, 初学者入门首选书籍, 主要介绍 Perl 基础语法,
    书中内容包括 Perl 程序员必须知道的, 写单文件脚本程序所需要的,
    适合 Perl 大量应用的知识.
-1. 「大骆驼」
+1. 「**大骆驼**」
    - 英: 「Programming Perl」, Larry Wall, Tom Christiansen 等 著
    - 中: 「Perl语言编程」, 何伟平 译
 
@@ -23,13 +23,13 @@
    也是少数几个在错综复杂的中游刃有余的人之一.
    Jon Orwant 是《Perl Journal》的主编,
    该杂志把 Perl 社区组合成了一个共同的论坛, 以进行 Perl 新的开发.
-1. 「草泥马」
+1. 「**草泥马**」
    - 英: 「Intermediate Perl」, Randal L.Schwartz, Tom Phoenix, brian d foy 著
 
    简介: O'Reilly 出版社联合 3 位 Perl 社区极负盛名的人出品的 Perl
    系列教程的第二本书, 主要介绍如何构造 Perl 复杂数据结构和对象的知识,
    以及如何组织团队工作(模块、测试和发布), 编写可重用的 Perl 程序.
-1. 「小羊驼母亲和她的孩子」
+1. 「**小羊驼母亲和她的孩子**」
    - 英: 「Mastering Perl」, brian d foy 著
    - 中: 「精通Perl」, 韩殿飞 译
 
@@ -37,7 +37,7 @@
    系列教程的第三本书, 该书综合运用了该系列前二本书中的知识,
    给出了很多有趣的话题并围绕它们列举了大量例子,
    通过这些话题和例子教会你 Perl 编程的思维方式.
-1. 「美洲猎鹿犬」
+1. 「**美洲猎鹿犬**」
    - 英: 「Perl Best Practices」, Damian Conway 著
    - 中: 「Perl最佳实践」, O'Reilly Taiwan公司 译
 
@@ -46,7 +46,7 @@
    数据和控制结构的选择, 程序解构和模块化, 接口的设计和实现, 面向对象设计,
    错误处理, 程序测试和调试. 所有的规则都是为了写出清晰, 健壮, 高效,
    可维护和简洁的程序而设计.
-1. 「高效黑客」
+1. 「**高效黑客**」
    - 英: 「Effective Perl Programming」, Joseph N.Hall, Joshua A.McAdams, brian d foy 著
    - 中: 「Perl高效编程」, 盛春, 王晖 等 译
 
@@ -54,7 +54,7 @@
    该书深入挖掘了 Perl 语言高效简洁的特点,
    为 Perl 爱好者提供了面向高效应用的指南. 书中内容包括对各种测试提出的建议.
    最新的正则表达式以及各种实用模块的习惯用法并逐一展现 120 个实用而精炼的案例.
-1. 「黑豹」
+1. 「**黑豹**」
    - 英: 「Advanced Perl Programming」, Simon Cozens 著
    - 中: 「高级Perl编程」, Perlisb 译
 
