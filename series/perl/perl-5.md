@@ -34,3 +34,4 @@
   print "I have ", @rocks, " rocks!\n";
   print "I have ", scalar @rocks, " rocks!\n";
   ```
+- 避免子程序名称与内置函数重名, 应使用 `&`, 或者打开警告开关 `use warnings`
