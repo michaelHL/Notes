@@ -1,4 +1,4 @@
-## U 盘安装 CentOS7.3
+## U 盘安装 CentOS 7.3
 
 1. Windows 下用 UltraISO 将系统刻入 U 盘
 2. 改 BIOS 启动引导项为 U 盘, 进入的第一个界面中将光标移至 `Install ...`,
