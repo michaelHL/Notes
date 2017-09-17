@@ -8,3 +8,4 @@
 - `imo` -- in my opinions, 在我看来
 - `tedium` /'tidɪəm/ -- *n*, 单调乏味
 - `essence` /'ɛsns/ -- 本质
+- `interpolation` -- 插值, 内插
