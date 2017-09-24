@@ -9,3 +9,8 @@
 - `tedium` /'tidɪəm/ -- *n*, 单调乏味
 - `essence` /'ɛsns/ -- 本质
 - `interpolation` -- 插值, 内插
+- `hazardous` -- 冒险的
+- `wildcard` -- 通配符
+- `quantifier` -- 量词
+- `quick-and-dirty` -- *adj*, 应急的; *n*, 快餐部
+- `precedence` -- 优先级
