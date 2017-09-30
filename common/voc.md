@@ -14,3 +14,5 @@
 - `quantifier` -- 量词
 - `quick-and-dirty` -- *adj*, 应急的; *n*, 快餐部
 - `precedence` -- 优先级
+- `workaround` -- 变通方案
+- `apostrophe` /[ə'pɑstrəfi]/ -- 撇号, 单引号
