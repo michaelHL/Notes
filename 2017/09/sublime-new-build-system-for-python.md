@@ -7,7 +7,7 @@
 
 ```json
 {
-    "cmd": ["start", "cmd", "/c", "D:\\Anaconda3\\envs\\workspace\\python.exe -u $file & pause"],
+    "cmd": ["start", "cmd", "/c", "python -u $file & pause"],
     "shell": true,
     "selector": "source.python",
     "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)"
