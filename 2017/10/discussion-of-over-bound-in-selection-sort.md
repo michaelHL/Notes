@@ -141,13 +141,18 @@ void insertion_sort(int *arr, int size) {
 
 int main() {
     int right = 10, arr[5] = {0}, left = 9;
-    printf("&arr:  %p\n", arr);
+    printf("arr:   %p\n", arr);
     printf("left:  %p\n", &left);
     printf("right: %p\n", &right);
-    printf("arr[-1]=%d\n", arr[-1]);
+    printf("arr[-1] = %d\n", arr[-1]);
 
     return 0;
 }
+
+// arr:   0xffffcb90
+// left:  0xffffcb8c
+// right: 0xffffcbac
+// arr[-1] = 9
 ```
 
 这里面涉及变量在内存中高地址低地址的排布, 有点超出个人理解范围,
