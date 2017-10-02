@@ -56,7 +56,7 @@ fits your decision.
 ### Install an officially supported (older) version of LLVM & Clang
 
 1. **IMPORTANT!** First, install an officially supported (older) version of GCC,
-   by performing the steps in the article [How to Install GCC on CentOS 6][install-gcc-on-centos-6]
+   by performing the steps in the article [How to Install GCC on CentOS 6](how-to-install-gcc-on-centos-6.md)
    -- you do NOT need to perform the steps under that article's heading
    "Install a newer version of GCC from source".
 1. Install LLVM & Clang
@@ -87,7 +87,7 @@ CentOS 6 does not have this high of a version in yum,
 so you first have to install a more recent GCC from source.
 
 1. **IMPORTANT!** First, install a newer version of GCC from source,
-   by performing the steps in the article [How to Install GCC on CentOS 6][[install-gcc-on-centos-6]]
+   by performing the steps in the article [How to Install GCC on CentOS 6](how-to-install-gcc-on-centos-6.md)
    -- you DO need to perform all steps in that article,
    including under the heading "Install a newer version of GCC from source".
 1. Install additionally required packages.
@@ -232,5 +232,4 @@ and your newer LLVM & Clang include files in `/usr/local/include`.
 
 
 [link]: https://www.vultr.com/docs/how-to-install-llvm-and-clang-on-centos-6
-[install-gcc-on-centos-6]: ./how-to-install-gcc-on-centos-6.md
 [LLVM]: http://llvm.org/
