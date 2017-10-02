@@ -232,4 +232,4 @@ and your newer LLVM & Clang include files in `/usr/local/include`.
 
 
 [link]: https://www.vultr.com/docs/how-to-install-llvm-and-clang-on-centos-6
-[LLVM]: http://llvm.org/
+[LLVM]: http://llvm.org
