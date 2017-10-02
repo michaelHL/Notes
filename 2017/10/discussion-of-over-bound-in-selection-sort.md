@@ -31,6 +31,11 @@ void insertion_sort(int *arr, int size) {
                 break;
             }
         }
+        /*int j = i - 1;
+        while (j >= 0 && arr[j] > temp) {
+            arr[j + 1] = arr[j];
+            j--;
+        }*/
         arr[j + 1] = temp;
     }
 }
@@ -65,6 +70,8 @@ int main(void) {
     return 0;
 }
 ```
+
+(其中注释的 `while` 循环较 `for` 循环更符合原伪代码的意思)
 
 对于待插入的元素 `arr[i]`, 前面有 `i-1` 个元素需要进行比对,
 一旦比对结果为 `false` 即退出这个比对过程. 比如说我发现 `arr[4]` 小于 `arr[i]`,
@@ -179,9 +186,9 @@ for (int i = 0; i < rand_len; i++) {
 ```c
 for (j = i - 1; j >= 0; j--) {
     if (arr[j] > temp) {
+        arr[j + 1] = arr[j];
         if (j == 0)
             arr[j] = temp;
-        arr[j + 1] = arr[j];
     } else {
         arr[j + 1] = temp;
         break;
