@@ -1,6 +1,6 @@
 ## CentOS 系统安装 LLVM 以及 Clang
 
-> 链接: [How To Install LLVM and Clang on CentOS 6][link]
+> 链接: [How To Install LLVM and Clang on CentOS 6][link]  
 > 日期: Wed, May 13, 2015 at 3:22 am EST
 
 LLVM is an open-source compiler infrastructure. LLVM was started in 2000,
