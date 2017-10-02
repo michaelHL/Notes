@@ -133,8 +133,8 @@ void insertion_sort(int *arr, int size) {
 
 **下面来证实这个观点.**
 
-首先做试验, 证实下标为负是在一些编译器下是可以正常工作的 (`clang version 5.0.0`
-, `clang version 5.0.0` 下正常, `VS2017` 失败):
+首先做试验, 证实下标为负是在一些编译器下是可以正常工作的 (`gcc (GCC) 6.3.0`,
+`clang version 5.0.0` 下正常, `VS2017` 失败):
 
 ```c
 #include <stdio.h>
