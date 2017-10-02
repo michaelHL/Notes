@@ -61,7 +61,7 @@ fits your decision.
    "Install a newer version of GCC from source".
 1. Install LLVM & Clang
    ```
-   sudo yum install clang
+   yum install clang
     --- This will bring in llvm as a dependency
    ```
 1. Check the installed versions, and see their locations.
@@ -102,7 +102,7 @@ so you first have to install a more recent GCC from source.
    wget https://www.python.org/ftp/python/2.7.9/Python-2.7.9.tgz
    tar -xvf Python-2.7.9.tgz
    cd Python-2.7.9
-   ./configure && make && sudo make install
+   ./configure && make && make install
    ```
 1. Decide which version of LLVM & Clang you want.
    This command will show you the "tags" for the versions available.
@@ -155,7 +155,7 @@ so you first have to install a more recent GCC from source.
    ```
    mkdir ../llvm_RELEASE_360_build
    cd ../llvm_RELEASE_360_build
-   cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER=/usr/local/bin/gcc -DCMAKE_CXX_COMPILER=/usr/local/bin/g++ ../llvm_RELEASE_360 && make && sudo make install && echo success
+   cmake -G "Unix Makefiles" -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER=/usr/local/bin/gcc -DCMAKE_CXX_COMPILER=/usr/local/bin/g++ ../llvm_RELEASE_360 && make && make install && echo success
        --- If your VPS has multiple cores, you can speed up the build by changing the middle part
        ---   of this line from "&& make &&" to "&& make -j <number of cores> &&".
        --- You can see the number of cores your VPS has by running "nproc"
@@ -176,8 +176,8 @@ so you first have to install a more recent GCC from source.
 1. Add the new libraries to ld (the GNU linker).
    ```
    echo "/usr/local/lib" > usrLocalLib.conf
-   sudo mv usrLocalLib.conf /etc/ld.so.conf.d/
-   sudo ldconfig
+   mv usrLocalLib.conf /etc/ld.so.conf.d/
+   ldconfig
        --- This may say a file or two "is not an ELF file - it has the wrong magic bytes at the start."
        --- You may ignore this message.  It is silent about the work it successfully completed.
    ```
@@ -217,7 +217,7 @@ so you first have to install a more recent GCC from source.
    a lot already done. And, as mentioned above, there are additional
    "sub-projects" you can add to LLVM & Clang. Also, the build
    process makes logs that you can later check and work from if something
-   goes wrong. But, after running "sudo make install" earlier,
+   goes wrong. But, after running "make install" earlier,
    your installed LLVM & Clang isn't depending on anything in this directory,
    and space can be at a premium, so you can do this step and reclaim the 11GB.
    ```
