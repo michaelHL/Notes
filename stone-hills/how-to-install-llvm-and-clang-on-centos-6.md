@@ -232,5 +232,5 @@ and your newer LLVM & Clang include files in `/usr/local/include`.
 
 
 [link]: https://www.vultr.com/docs/how-to-install-llvm-and-clang-on-centos-6
-[install-gcc-on-centos-6]: how-to-install-gcc-on-centos-6.md
+[install-gcc-on-centos-6]: ./how-to-install-gcc-on-centos-6.md
 [LLVM]: http://llvm.org/
