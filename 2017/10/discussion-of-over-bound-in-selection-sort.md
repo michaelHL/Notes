@@ -15,4 +15,55 @@
 
 根据此伪码写一段「正常」的插入排序代码:
 
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+void insertion_sort(int *arr, int size) {
+    int i, j, temp;
+    for (i = 1; i < size; i++) {
+        temp = arr[i];
+        for (j = i - 1; j >= 0; j--) {
+            if (arr[j] > temp) {
+                arr[j + 1] = arr[j];
+            } else {
+                break;
+            }
+        }
+        arr[j + 1] = temp;
+    }
+}
+
+void printarr(int *arr, int size) {
+    for (int i = 0; i < size; i++) {
+        if (i)
+            printf(" %d", arr[i]);
+        else
+            printf("%d", arr[i]);
+    }
+    putchar('\n');
+}
+
+int rand_len     = 20;
+int rand_max_num = 100;
+
+int main(void) {
+    time_t t;
+    int *testarr;
+
+    srand((unsigned)time(&t));
+    testarr = (int *)malloc(sizeof(int) * rand_len);
+    for (int i = 0; i < rand_len; i++) {
+        testarr[i] = rand() % rand_max_num;
+    }
+
+    printarr(testarr, rand_len);
+    insertion_sort(testarr, rand_len);
+    printarr(testarr, rand_len);
+
+    return 0;
+}
+
+```
 
