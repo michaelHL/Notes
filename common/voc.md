@@ -16,3 +16,4 @@
 - `precedence` -- 优先级
 - `workaround` -- 变通方案
 - `apostrophe` /[ə'pɑstrəfi]/ -- 撇号, 单引号
+- `canonical` /kə'nɑnɪkl/ -- 权威的
