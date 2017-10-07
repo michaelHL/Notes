@@ -18,3 +18,5 @@
 - `apostrophe` /[ə'pɑstrəfi]/ -- 撇号, 单引号
 - `canonical` /kə'nɑnɪkl/ -- 权威的
 - `wrapper` /'ræpɚ/ -- *n*, 包装
+- `arity` /ˈærɪti/ -- 元数
+
