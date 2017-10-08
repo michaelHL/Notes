@@ -18,7 +18,7 @@
   chcp utf-8
   set LANG=en_US.utf-8
   ```
-- 当前的配置文件 `../src/conemu.xml`
+- 当前的配置文件 [conemu.xml](../src/conemu.xml)
 
 
 
