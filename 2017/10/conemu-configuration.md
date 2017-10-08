@@ -11,6 +11,7 @@
      - `Cygwin`:   `conemu-cyg-32.exe` and `conemu-cyg-64.exe`
      - `MSYS 1.0`: `conemu-msys-32.exe`
      - `MSYS 2.0`: `conemu-msys2-32.exe` and `conemu-msys2-64.exe`
+
      复制到 `sh.exe` 同目录下即可
 - 设置一波启动时设定 (`Startup`, `Environment`):
   ```
