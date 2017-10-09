@@ -101,3 +101,24 @@
    -L/usr/lib64/perl5/CORE -lperl -lresolv -lnsl -ldl -lm -lcrypt -lutil -lpthread
    -lc    -lruby -lpthread -lrt -ldl -lcrypt -lm
    ```
+
+---
+
+顺便提下在 MSYS2 下的编译过程:
+
+```bash
+pacman -S ncurses-devel libcrypt-devel
+
+./configure --with-features=huge \
+--enable-luainterp=yes \
+--enable-perlinterp=yes \
+--enable-pythoninterp=yes \
+--enable-python3interp=yes \
+--with-lua-prefix=/usr/local \
+--enable-fontset=yes \
+--enable-cscope=yes \
+--enable-multibyte \
+--disable-gui \
+--enable-fail-if-missing \
+--prefix=/usr/local
+```
