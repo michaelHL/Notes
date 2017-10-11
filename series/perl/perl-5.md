@@ -42,3 +42,11 @@
 - Perl 提供两种类型的名字空间, 符号表 (symbol table) 和词法作用域
   (lexical scope).
 - `$str =~ tr/x//` 仅统计 `$str` 中 `x` 的数量, 而 `tr/x//d` 删除所有的 `x`
+- Windows 用 StrawBerry Perl 安装 CPAN 包时, 注意将包含 StrawBerry 的 GCC
+  工具链优先级提前或者删除其它可能影响编译的路径,
+  部分包需要强制安装: `cpan -fi Tk`
+- Windows 下 `cpan` 安装包遇到网络环境差如何设置代理:
+  ```
+  % set http_proxy=http://127.0.0.1:1234
+  % cpan -fi xx::xx
+  ```
