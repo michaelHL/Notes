@@ -50,3 +50,8 @@
   % set http_proxy=http://127.0.0.1:1234
   % cpan -fi xx::xx
   ```
+- Windows 下 `Strawberry Perl` 的 `portable` 版本中,
+  `\Strawberry\perl\vendor\lib\Portable` 会覆盖掉模块 `File::Homedir`,
+  导致结果可能与预期不同, 应改用 `File::HomeDir::Windows`.
+- **更新** 上述的问题可能与 `File::HomeDir` 的版本过低有关,
+  重新通过 `cpan` 安装貌似可以解决
