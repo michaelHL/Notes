@@ -1,0 +1,3 @@
+- [The top 10 tricks of Perl one-liners](https://blogs.oracle.com/ksplice/the-top-10-tricks-of-perl-one-liners)
+- [Perl之单行命令特技](http://blog.chinaunix.net/uid-363820-id-3187675.html)
+- [Perl: one liner tips](https://tyro2tiger.wordpress.com/2013/11/24/perl-one-liner-tips/)
