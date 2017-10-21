@@ -10,8 +10,6 @@ yum install zsh
 chsh -s /usr/bin/zsh
 ```
 
-详情请见 oh-my-zsh 的 [wiki][oh-my-zsh-wiki].
-
 ### 安装 Oh-My-Zsh
 
 官方 [repo][oh-my-zsh-repo]
@@ -25,6 +23,8 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 ```bash
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 ```
+
+详情请见 oh-my-zsh 的 [wiki][oh-my-zsh-wiki].
 
 ### 安装插件 Powerlevel9k
 
