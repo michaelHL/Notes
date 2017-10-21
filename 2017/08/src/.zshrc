@@ -10,14 +10,19 @@ export LESS_TERMCAP_so=$(printf '\e[01;33m') # enter standout mode - yellow
 export LESS_TERMCAP_ue=$(printf '\e[0m') # leave underline mode
 export LESS_TERMCAP_us=$(printf '\e[04;36m') # enter underline mode - cyan
 
+export MANPATH=${MANPATH}:/usr/local/texlive/2017/texmf-dist/doc/man
+export INFOPATH=${INFOPATH}:/usr/local/texlive/2017/texmf-dist/doc/info
+export PATH=${PATH}:/usr/local/texlive/2017/bin/x86_64-linux
+
 # If you come from bash you might have to change your $PATH.
 
 # Path to your oh-my-zsh installation.
-export ZSH=/home/heller/.oh-my-zsh
+export ZSH=/home/michael/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+POWERLEVEL9K_MODE='nerdfont-complete'
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -95,14 +100,33 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+eval $(thefuck --alias)
+export THEFUCK_RULES='sudo:no_command'
+export THEFUCK_EXCLUDE_RULES='git_pull:git_push'
+export THEFUCK_REQUIRE_CONFIRMATION='true'
+export THEFUCK_WAIT_COMMAND=10
+export THEFUCK_NO_COLORS='false'
+export THEFUCK_PRIORITY='no_command=9999:apt_get=100'
+export THEFUCK_HISTORY_LIMIT='2000'
+
 export HISTTIMEFORMAT='%F %T '
 export HISTCONTROL=erasedups
 export HISTIGNORE="ls:pwd:cd:clear:vim:fg:bg:jobs:top:htop"
 
+setopt BANG_HIST
+setopt SHARE_HISTORY
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_FIND_NO_DUPS
+setopt HIST_IGNORE_SPACE
+setopt HIST_SAVE_NO_DUPS
+setopt HIST_REDUCE_BLANKS
+setopt HIST_VERIFY
 
 # prompt_context () {}
 
-POWERLEVEL9K_MODE='nerdfont-complete'
+POWERLEVEL9K_ROOT_ICON="♚"
 POWERLEVEL9K_BATTERY_CHARGING='yellow'
 POWERLEVEL9K_BATTERY_CHARGED='green'
 POWERLEVEL9K_BATTERY_DISCONNECTED='$DEFAULT_COLOR'
@@ -113,7 +137,7 @@ POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=''
 POWERLEVEL9K_MULTILINE_SECOND_PROMPT_PREFIX='\uf0da'
 POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='yellow'
 POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND='yellow'
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(anaconda status root_indicator dir vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon anaconda status root_indicator dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(time ram load ssh rbenv rvm)
 POWERLEVEL9K_SHORTEN_STRATEGY="truncate_middle"
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=4
@@ -123,6 +147,8 @@ POWERLEVEL9K_STATUS_OK_IN_NON_VERBOSE=true
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_MULTILINE_SECOND_PROMPT_PREFIX="%F{blue}▶%F{white} "
 
+POWERLEVEL9K_OS_ICON_BACKGROUND="55"
+POWERLEVEL9K_OS_ICON_FOREGROUND="87"
 POWERLEVEL9K_DIR_HOME_FOREGROUND='black'
 POWERLEVEL9K_DIR_HOME_BACKGROUND='blue'
 POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND='black'
