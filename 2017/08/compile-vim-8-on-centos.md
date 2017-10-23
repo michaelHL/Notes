@@ -14,23 +14,29 @@
    git clone https://github.com/vim/vim.git
    ```
 
+   或者自己 clone 到码云的仓库:
+
+   ```sh
+   git clone https://gitee.com/shinemic/vim.git
+   ```
+
 1. 开始各种配置:
 
    ```sh
    ./configure --with-features=huge \
-   --enable-rubyinterp=yes \
-   --enable-luainterp=yes \
-   --enable-perlinterp=yes \
-   --enable-pythoninterp=yes \
-   --enable-python3interp=yes \
-   --with-python-config-dir=/usr/lib64/python2.7/config \
-   --with-python3-config-dir=/usr/lib64/python3.4/config-3.4m \
-   --enable-fontset=yes \
-   --enable-cscope=yes \
-   --enable-multibyte \
-   --disable-gui \
-   --enable-fail-if-missing \
-   --prefix=/usr
+               --enable-rubyinterp=yes \
+               --enable-luainterp=yes \
+               --enable-perlinterp=yes \
+               --enable-pythoninterp=yes \
+               --enable-python3interp=yes \
+               --with-python-config-dir=/usr/lib64/python2.7/config \
+               --with-python3-config-dir=/usr/lib64/python3.4/config-3.4m \
+               --enable-fontset=yes \
+               --enable-cscope=yes \
+               --enable-multibyte \
+               --disable-gui \
+               --enable-fail-if-missing \
+               --prefix=/usr
    ```
 
    对其中的参数稍作解释:
@@ -110,15 +116,40 @@
 pacman -S ncurses-devel libcrypt-devel
 
 ./configure --with-features=huge \
---enable-luainterp=yes \
---enable-perlinterp=yes \
---enable-pythoninterp=yes \
---enable-python3interp=yes \
---with-lua-prefix=/usr/local \
---enable-fontset=yes \
---enable-cscope=yes \
---enable-multibyte \
---disable-gui \
---enable-fail-if-missing \
---prefix=/usr/local
+            --enable-luainterp=yes \
+            --enable-perlinterp=yes \
+            --enable-pythoninterp=yes \
+            --enable-python3interp=yes \
+            --with-lua-prefix=/usr/local \
+            --enable-fontset=yes \
+            --enable-cscope=yes \
+            --enable-multibyte \
+            --disable-gui \
+            --enable-fail-if-missing \
+            --prefix=/usr/local
+```
+
+---
+
+再顺便附上 Ubuntu 16.04 上的编译过程
+
+```sh
+sudo apt-get install libncurses5-dev libgnome2-dev \
+                     libgnomeui-dev libgtk2.0-dev libatk1.0-dev libbonoboui2-dev \
+                     libcairo2-dev libx11-dev libxpm-dev libxt-dev python-dev \
+                     python3-dev ruby-dev lua5.1 lua5.1-dev libperl-dev git
+./configure --with-features=huge \
+            --enable-luainterp=yes \
+            --enable-rubyinterp=yes \
+            --enable-perlinterp=yes \
+            --enable-pythoninterp=yes \
+            --with-python-config-dir=/usr/lib/python2.7/config-x86_64-linux-gnu \
+            --enable-python3interp=yes \
+            --with-python3-config-dir=/usr/lib/python3.5/config-3.5m-x86_64-linux-gnu \
+            --enable-fontset=yes \
+            --enable-cscope=yes \
+            --enable-multibyte \
+            --enable-fail-if-missing \
+            --enable-gui=gtk2 \
+            --prefix=/usr/local
 ```
