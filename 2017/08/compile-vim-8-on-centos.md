@@ -108,9 +108,7 @@
    -lc    -lruby -lpthread -lrt -ldl -lcrypt -lm
    ```
 
----
-
-顺便提下在 MSYS2 下的编译过程:
+### MSYS2 下编译过程
 
 ```bash
 pacman -S ncurses-devel libcrypt-devel
@@ -129,9 +127,7 @@ pacman -S ncurses-devel libcrypt-devel
             --prefix=/usr/local
 ```
 
----
-
-再顺便附上 Ubuntu 16.04 上的编译过程
+### Ubuntu 16.04 下编译过程
 
 ```sh
 sudo apt-get install libncurses5-dev libgnome2-dev \
@@ -153,3 +149,8 @@ sudo apt-get install libncurses5-dev libgnome2-dev \
             --enable-gui=gtk2 \
             --prefix=/usr/local
 ```
+
+### 注意事项
+
+在 `CentOS` 机器上若安装其它版本的 `Python`, 可能导致各种与 `Python` 相关的问题,
+在编译的时候灵活取舍 `python` 与 `python3` 选项即可.
