@@ -5,7 +5,6 @@
 > 来源: [CSDN 博客][source]
 
 1. 「**小骆驼**」
-
    - 英: 「Learning Perl」, Randal L.Schwartz, brian d foy, Tom Phoenix 著
    - 中: 「Perl语言入门」, 盛春 译
 
