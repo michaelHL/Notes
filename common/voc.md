@@ -19,4 +19,4 @@
 - `canonical` /kə'nɑnɪkl/ -- 权威的
 - `wrapper` /'ræpɚ/ -- *n*, 包装
 - `arity` /ˈærɪti/ -- 元数
-
+- `baffle` /'bæfl/ -- 使困惑
