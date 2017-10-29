@@ -52,3 +52,4 @@
      ```
    - 服务端禁用 `GSSAPIAuthentication`: 同样在 `/etc/ssh/sshd_config`
      中设定  `GSSAPIAuthentication no`
+1. SSH 登录欢迎界面设置文件: `/etc/motd`
