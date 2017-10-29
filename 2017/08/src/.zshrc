@@ -10,33 +10,20 @@ export LESS_TERMCAP_so=$(printf '\e[01;33m') # enter standout mode - yellow
 export LESS_TERMCAP_ue=$(printf '\e[0m') # leave underline mode
 export LESS_TERMCAP_us=$(printf '\e[04;36m') # enter underline mode - cyan
 
-
-# proxy
-# export http_proxy="http://192.168.1.102:1888/"
-# export https_proxy="https://192.168.1.102:1888/"
-# export ftp_proxy="ftp://192.168.1.102:1888/"
+export MANPATH=${MANPATH}:/usr/local/texlive/2017/texmf-dist/doc/man
+export INFOPATH=${INFOPATH}:/usr/local/texlive/2017/texmf-dist/doc/info
+export PATH=${PATH}:/usr/local/texlive/2017/bin/x86_64-linux
+export DYLD_FORCE_FLAT_NAMESPACE=1
 
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/anaconda3/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/home/heller/.oh-my-zsh
-
-setopt BANG_HIST
-setopt SHARE_HISTORY
-setopt HIST_EXPIRE_DUPS_FIRST
-setopt HIST_IGNORE_DUPS
-setopt HIST_IGNORE_ALL_DUPS
-setopt HIST_FIND_NO_DUPS
-setopt HIST_IGNORE_SPACE
-setopt HIST_SAVE_NO_DUPS
-setopt HIST_REDUCE_BLANKS
-setopt HIST_VERIFY
-POWERLEVEL9K_MODE='nerdfont-complete'
+export ZSH=/home/michael/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+POWERLEVEL9K_MODE='nerdfont-complete'
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -92,9 +79,6 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-export MANPATH=$MANPATH:/usr/local/texlive/2017/texmf-dist/doc/man
-export INFOPATH=$INFOPATH:/usr/local/texlive/2017/texmf-dist/doc/info
-export PATH=$PATH:/usr/local/texlive/2017/bin/x86_64-linux
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
@@ -117,13 +101,33 @@ export PATH=$PATH:/usr/local/texlive/2017/bin/x86_64-linux
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+eval $(thefuck --alias)
+export THEFUCK_RULES='sudo:no_command'
+export THEFUCK_EXCLUDE_RULES='git_pull:git_push'
+export THEFUCK_REQUIRE_CONFIRMATION='true'
+export THEFUCK_WAIT_COMMAND=10
+export THEFUCK_NO_COLORS='false'
+export THEFUCK_PRIORITY='no_command=9999:apt_get=100'
+export THEFUCK_HISTORY_LIMIT='2000'
+
 export HISTTIMEFORMAT='%F %T '
 export HISTCONTROL=erasedups
 export HISTIGNORE="ls:pwd:cd:clear:vim:fg:bg:jobs:top:htop"
 
+setopt BANG_HIST
+setopt SHARE_HISTORY
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt HIST_IGNORE_DUPS
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_FIND_NO_DUPS
+setopt HIST_IGNORE_SPACE
+setopt HIST_SAVE_NO_DUPS
+setopt HIST_REDUCE_BLANKS
+setopt HIST_VERIFY
 
 # prompt_context () {}
 
+POWERLEVEL9K_ROOT_ICON="♚"
 POWERLEVEL9K_BATTERY_CHARGING='yellow'
 POWERLEVEL9K_BATTERY_CHARGED='green'
 POWERLEVEL9K_BATTERY_DISCONNECTED='$DEFAULT_COLOR'
@@ -144,7 +148,6 @@ POWERLEVEL9K_STATUS_OK_IN_NON_VERBOSE=true
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_MULTILINE_SECOND_PROMPT_PREFIX="%F{blue}▶%F{white} "
 
-POWERLEVEL9K_ROOT_ICON="♚"
 POWERLEVEL9K_OS_ICON_BACKGROUND="55"
 POWERLEVEL9K_OS_ICON_FOREGROUND="87"
 POWERLEVEL9K_DIR_HOME_FOREGROUND='black'
