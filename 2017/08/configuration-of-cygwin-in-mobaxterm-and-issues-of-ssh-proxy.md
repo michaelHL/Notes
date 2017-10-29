@@ -37,6 +37,7 @@
      只好先 `remove` 再 `install`.
    - 建议安装的包:
      - busybox
+     - coreutils
      - curl
      - **libopenssl100**
      - git
