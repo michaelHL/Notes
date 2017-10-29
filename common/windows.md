@@ -17,7 +17,9 @@
     - `apt-cyg -m http://mirrors.ustc.edu.cn/cygwin/ install/remove ...`
     - `apt-cyg -m http://mirrors.aliyun.com/cygwin/ install/remove ...`
     - `apt-cyg -m http://mirrors.163.com/cygwin/ install/remove ...`
-1. MobaXterm 中的 Cygwin 如有命令出错, 有可能是版本过低.
+1. MobaXterm 中的 Cygwin 如有命令出错, 有可能是版本过低
+1. MobaXterm 中如果无法安装包(一般出现校验值错误的情况), 可手动下载 `setup.ini`,
+   注意版本为 `x86`
 1. Sublime Text 插件 SFTP 注册码: (在 `Settings-User` 中加入)
     ```json
     {
