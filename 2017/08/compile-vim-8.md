@@ -38,7 +38,8 @@
                --enable-multibyte \
                --disable-gui \
                --enable-fail-if-missing \
-               --prefix=/usr
+               --prefix=/usr/local \
+               --with-compiledby='Professional operations'
    ```
 
    对其中的参数稍作解释:
@@ -126,7 +127,8 @@ pacman -S ncurses-devel libcrypt-devel
             --enable-multibyte \
             --disable-gui \
             --enable-fail-if-missing \
-            --prefix=/usr/local
+            --prefix=/usr/local \
+            --with-compiledby='Professional operations'
 ```
 
 ### Ubuntu 16.04 下编译过程
@@ -149,10 +151,12 @@ sudo apt-get install libncurses5-dev libgnome2-dev \
             --enable-multibyte \
             --enable-fail-if-missing \
             --enable-gui=gtk2 \
-            --prefix=/usr/local
+            --prefix=/usr/local \
+            --with-compiledby='Professional operations'
 ```
 
 ### 注意事项
 
-在 `CentOS` 机器上若安装其它版本的 `Python`, 可能导致各种与 `Python` 相关的问题,
-在编译的时候灵活取舍 `python` 与 `python3` 选项即可.
+- 在 `CentOS` 机器上若安装其它版本的 `Python`, 可能导致各种与 `Python` 相关的问题,
+  在编译的时候灵活取舍 `python` 与 `python3` 选项即可
+- 若不能 `configure`, 执行 `make distclean`
