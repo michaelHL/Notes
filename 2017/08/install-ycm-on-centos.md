@@ -1,4 +1,6 @@
-## CentOS下安装Vim插件YouCompleteme(YCM)
+## Linux 下安装 Vim 插件 YouCompleteme (YCM)
+
+### CentOS 7.3
 
 CentOS 7.3 自带的 GCC 版本只有 4.8.5, 在之前无数次失败的安装中,
 低版本是最大的问题. 整个的配置过程中, 工具的版本至关重要, Clang 依赖 GCC,
@@ -90,6 +92,19 @@ let g:ycm_semantic_triggers = {
 \ 'ruby' : ['.', '::'],
 \ 'lua' : ['.', ':']
 \ }
+```
+
+### Ubuntu 16.04
+
+`cmake` 部分有稍许变动:
+
+```bash
+cmake -G "Unix Makefiles" \
+-DPATH_TO_LLVM_ROOT=~/ycm_temp/clang+llvm-4.0.1-x86_64-linux-gnu-debian8 \
+-DPYTHON_INCLUDE_DIR=/usr/include/python3.5m \
+-DPYTHON_LIBRARY=/usr/lib/x86_64-linux-gnu/libpython3.5m.so \
+-DUSE_PYTHON2=OFF \
+. ~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp
 ```
 
 ### 致谢
