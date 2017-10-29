@@ -7,7 +7,7 @@ CentOS 7.3 自带的 GCC 版本只有 4.8.5, 在之前无数次失败的安装�
 如用最新的 Clang-4.0.1, 那GCC的版本至少要 4.9.x. 所以第一步, 更新 GCC,
 这里安装版本 4.9.4.
 
-### 更新GCC
+#### 更新GCC
 
 ```bash
 wget ftp://gcc.gnu.org/pub/gcc/releases/gcc-4.9.4/gcc-4.9.4.tar.bz2
@@ -25,7 +25,7 @@ make install
 这个 `make` 的过程耗费了1个小时, 当然还有个小坑: 记得安装 `bzip2`,
 记得 `.tar.xz` 文件用 `tar -zxvf` 解压, `.tar.bz2` 用 `tar -jxvf` 解压.
 
-### 更新libstdc++
+#### 更新libstdc++
 
 ```bash
 cp /usr/local/lib64/libstdc++.so.6.0.20 /usr/lib64
@@ -43,7 +43,7 @@ ln -s /usr/local/bin/gcc /usr/bin/cc
 ln -s /usr/local/bin/g++ /usr/bin/c++
 ```
 
-### 编译YCM
+#### 编译YCM
 
 ```bash
 cd ~/.vim/bundle/
@@ -69,11 +69,11 @@ cmake --build . --target ycm_core
 利用 `cmake` 生成 `makefile`, 这里仅用 `Python 3.x` 版本, 所以使用
 `-DUSE_PYTHON2=OFF` 选项.
 
-### C-family的语义分析支持
+#### C-family的语义分析支持
 
 在根目录 `~` 下新建文件 [`.ycm_extra_conf.py`](src/.ycm_extra_conf.py).
 
-### .vimrc配置
+#### .vimrc配置
 
 记得在插件区中加入 `Plugin 'Valloric/YouCompleteMe'`.
 
