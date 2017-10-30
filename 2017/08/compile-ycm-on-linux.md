@@ -2,7 +2,8 @@
 
 #### 更新 GCC
 
-见 [CentOS 下编译 GCC](compile-gcc-on-centos.md).
+见 [CentOS 下编译 GCC](compile-gcc-on-centos.md)
+或 [CentOS 系统安装 GCC](../../stone-hills/how-to-install-gcc-on-centos-6.md).
 
 #### 编译 YCM
 
