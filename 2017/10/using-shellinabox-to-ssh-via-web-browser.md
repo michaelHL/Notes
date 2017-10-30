@@ -43,4 +43,9 @@
    service shellinaboxd start
    ```
 
+### 致谢
+
+- [Web终端之使用shellinabox在浏览器进行ssh登录](http://www.jianshu.com/p/afec77178b67)
+- [How to change font and font size?](https://github.com/shellinabox/shellinabox/issues/68)
+
 [shellinabox-official]: https://github.com/SoulSu/shellinabox
