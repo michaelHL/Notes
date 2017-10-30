@@ -1,4 +1,4 @@
-## Linux 下安装 Vim 插件 YouCompleteme (YCM)
+## Linux 下编译 Vim 插件 YouCompleteme (YCM)
 
 ### CentOS 7.3
 
