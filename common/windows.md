@@ -78,3 +78,14 @@
    ```
    [ Nasty-Newbie | 12:26:26.91 | C:\Users\Michael ]
    ```
+1. `MSYS2` 中的文件夹映射文件: `/etc/fstab`, 比如:
+   ```
+   # For a description of the file format, see the Users Guide
+   # http://cygwin.com/cygwin-ug-net/using.html#mount-table
+
+   # DO NOT REMOVE NEXT LINE. It remove cygdrive prefix from path
+   none / cygdrive binary,posix=0,noacl,user 0 0
+   C:\Users\Michael\Desktop /desktop
+   D:\MSYS2\home\Michael\Notes /notes
+   F:\WorkingDirectory\Work\__current /current
+   ```
