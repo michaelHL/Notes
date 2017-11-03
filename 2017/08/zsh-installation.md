@@ -46,7 +46,8 @@ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/theme
   <img src="img/zsh-on-xshell.png">
 </p>
 
-**注** 其中所用字体为 `SauceCodePro`, 官方 [repo][nerdfonts-repo]
+**注** 其中所用字体为 `Sauce Code Pro Nerd Font Complete Mono Windows Compatible`,
+官方 [repo][nerdfonts-repo]
 
 
 [oh-my-zsh-repo]: https://github.com/robbyrussell/oh-my-zsh
