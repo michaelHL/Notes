@@ -38,18 +38,8 @@
    find . -iname "*.mp3" -print0 | xargs -0 -I mp3file mplayer mp3file
    ```
 1. SSH 登录服务器缓慢解决方案:
-   - 关闭 DNS 反向解析:
-     ```bash
-     vim /etc/ssh/sshd_config
-     ```
-     设定其中
-     ```bash
-     UseDNS=no
-     ```
-     重启服务
-     ```
-     service sshd restart
-     ```
+   - 关闭 DNS 反向解析: `vim /etc/ssh/sshd_config`,
+     设定其中 `UseDNS=no`, 重启服务 `service sshd restart`
    - 服务端禁用 `GSSAPIAuthentication`: 同样在 `/etc/ssh/sshd_config`
      中设定  `GSSAPIAuthentication no`
 1. SSH 登录欢迎界面设置文件: `/etc/motd`
