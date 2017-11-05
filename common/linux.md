@@ -1,4 +1,4 @@
-## Linux 终端技巧拾零
+## Linux 技巧拾零
 
 1. 使对补全大小写不敏感.  
    所有用户: `/etc/inputrc`  
@@ -53,3 +53,7 @@
    - 服务端禁用 `GSSAPIAuthentication`: 同样在 `/etc/ssh/sshd_config`
      中设定  `GSSAPIAuthentication no`
 1. SSH 登录欢迎界面设置文件: `/etc/motd`
+1. SSH Log 日志文件:
+   - `Redhat`, `Fedora Core`: `/var/log/secure`
+   - `Mandrake`, `FreeBSD`, `OpenBSD`, `Debian`: `/var/log/auth.log`
+   - `SUSE`: `/var/log/messages`
