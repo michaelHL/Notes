@@ -25,7 +25,7 @@
      ```
      autossh -M 6777 -NR 6766:localhost:22 usera@a.site -i /path/to/id_rsa
      ```
-     即可, 但该命令会在前端等待. 但如果需要不间断运行地置于后台,
+     即可, 但该命令会在前端等待. 如果需要不间断运行地置于后台,
      可使用 `nohup` 命令:
      ```
      nohup autossh -M 6777 -NR 6766:localhost:22 usera@a.site -i /path/to/id_rsa >/dev/null 2>&1 &
