@@ -49,6 +49,15 @@ git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/theme
 **注** 其中所用字体为 `Sauce Code Pro Nerd Font Complete Mono Windows Compatible`,
 官方 [repo][nerdfonts-repo]
 
+### 常见问题
+
+- 不能更新, 提示
+  `error: Cannot pull with rebase: You have unstaged changes.`
+  ```bash
+  cd $ZSH && git stash && cd -
+  upgrade_oh_my_zsh
+  ```
+
 
 [oh-my-zsh-repo]: https://github.com/robbyrussell/oh-my-zsh
 [oh-my-zsh-wiki]: https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH
