@@ -14,12 +14,12 @@
    - 设置 `sshd` 设置文件 `/etc/ssh/sshd_config`: `GatewayPorts yes`
    - `sudo systemctl restart sshd`
 1. 在机器 B 上:
-   1. 创建 SSH 密钥, 上传至 A:
-      ```
-      ssh-keygen -t 'rsa'
-      ssh-copy-id usera@a.site
-      ```
-      一路回车即可
+   创建 SSH 密钥, 上传至 A:
+   ```
+   ssh-keygen -t 'rsa'
+   ssh-copy-id usera@a.site
+   ```
+   一路回车即可
 1.
    - 如果仅作测试, 直接键入命令
      ```
