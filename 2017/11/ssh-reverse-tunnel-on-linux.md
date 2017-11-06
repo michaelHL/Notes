@@ -56,7 +56,7 @@
     - `*.service` 文件中需要写绝对路径
     - `systemctl enable` 表示设置服务为自动启动
 
-**开耍**:
+### 开耍
 
 - A 连 B: `ssh -p 6766 userb@localhost`
 - C 连 B: `ssh -p 6766 userb@a.site`
