@@ -34,7 +34,7 @@
      1. 编辑文件 `/etc/systemd/system/autossh.service`,
         ```
         [Unit]
-        Description=autossh database
+        Description=autossh ssh
         After=network-online.target
 
         [Service]
