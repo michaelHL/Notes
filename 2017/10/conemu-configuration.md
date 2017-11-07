@@ -21,7 +21,5 @@
   ```
 - 当前的配置文件 [conemu.xml](../src/conemu.xml)
 
-
-
 [conemu]: https://conemu.github.io
 [connector]: https://github.com/Maximus5/cygwin-connector
