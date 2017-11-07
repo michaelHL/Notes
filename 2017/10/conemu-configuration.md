@@ -6,7 +6,7 @@
   `Default term`, `Force ConEmu as default terminal for console applications`
 - 顺便在下面的对话框中填入 `explorer.exe|devenv.exe` 以被 VS 唤起
 - 对于 `MSYS2` 的集成:
-  1. 新建 `Task`: `set MSYSTEM=MINGW64 & "/path/to/MSYS-connector"`
+  1. 新建 `Task`: `set MSYSTEM=MINGW64 & "/path/to/MSYS-connector -cur_console:n"`
   1. `Connector` 网址: [cygwin-connector][connector], 不同版本的设置如下:
      - `Cygwin`:   `conemu-cyg-32.exe` and `conemu-cyg-64.exe`
      - `MSYS 1.0`: `conemu-msys-32.exe`
