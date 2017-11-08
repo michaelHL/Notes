@@ -89,3 +89,7 @@
    D:\MSYS2\home\Michael\Notes /notes
    F:\WorkingDirectory\Work\__current /current
    ```
+1. Chrome 浏览器在高分屏幕下的快捷方式:
+   ```
+   "\chrome.exe" /high-dpi-support=1 /force-device-scale-factor=1
+   ```
