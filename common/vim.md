@@ -19,4 +19,4 @@
 
 ### 功能键
 
-- <kbd>C-r</kbd><kbd>=</kbd> 在插入模式中计算表达式
+- <kbd>C-r</kbd><kbd>=</kbd><kbd>...</kbd> 在插入模式中计算表达式
