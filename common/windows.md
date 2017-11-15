@@ -93,5 +93,5 @@
    ```
    "\chrome.exe" /high-dpi-support=1 /force-device-scale-factor=1
    ```
-1. 为 [SourceForge][https://sourceforge.net/] 加速:
+1. 为 [SourceForge](https://sourceforge.net) 加速:
    http://sourceforge.mirrorservice.org.
