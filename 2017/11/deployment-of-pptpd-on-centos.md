@@ -90,4 +90,4 @@ net.ipv4.ip_forward = 1        # 设置为 1
    -A INPUT -p gre -j ACCEPT  # 防火墙打开 gre 协议
    ```
 
-至此, CentOS 下 pptpd 搭建完成.
+至此, CentOS 下 pptpd 搭建完成 :grimacing:
