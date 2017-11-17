@@ -27,10 +27,8 @@
 
 #### 安装步骤
 
-[** 这是测试 **](src/ssr.sh)
-
 ```
-wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/doubi/master/ssr.sh && chmod +x ssr.sh && bash ssr.sh
+wget -N --no-check-certificate https://raw.githubusercontent.com/michaelHL/Notes/master/2017/11/src/ssr.sh && chmod +x ssr.sh && bash ssr.sh
 ```
 
 #### 注意事项
@@ -42,7 +40,7 @@ wget -N --no-check-certificate https://raw.githubusercontent.com/ToyoDAdoubi/dou
 ### 安装 `TCP-BBR`
 
 ```
-wget -N --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh && chmod +x bbr.sh && bash bbr.sh
+wget -N --no-check-certificate https://raw.githubusercontent.com/michaelHL/Notes/master/2017/11/src/bbr.sh && chmod +x bbr.sh && bash bbr.sh
 ```
 
 重启后, 验证一下是否成功安装最新内核并开启 `TCP-BBR`, 输入以下命令:
