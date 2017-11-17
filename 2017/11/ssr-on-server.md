@@ -31,6 +31,23 @@
 wget -N --no-check-certificate https://raw.githubusercontent.com/michaelHL/Notes/master/2017/11/src/ssr.sh && chmod +x ssr.sh && bash ssr.sh
 ```
 
+#### 文件位置
+
+- 安装目录: `/usr/local/shadowsocksr`
+- 配置文件: `/etc/shadowsocksr/user-config.json`
+
+#### 其他说明
+
+`ShadowsocksR` 安装后, 自动设置为系统服务,
+所以支持使用服务来启动 / 停止等操作, 同时支持开机启动.
+
+- 启动 `ShadowsocksR`: `/etc/init.d/ssr start`
+- 停止 `ShadowsocksR`: `/etc/init.d/ssr stop`
+- 重启 `ShadowsocksR`: `/etc/init.d/ssr restart`
+- 查看 `ShadowsocksR` 状态: `/etc/init.d/ssr status`
+
+`ShadowsocksR` 默认支持 UDP 转发, 服务端无需任何设置
+
 #### 注意事项
 
 - 如果协议是 `origin`, 那么混淆也必须是 `plain`
