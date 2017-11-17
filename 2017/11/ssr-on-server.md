@@ -1,6 +1,6 @@
 ## SSR 服务器搭建
 
-> 原文链接:
+> 原文链接:  
 > [『原创』CentOS/Debian/Ubuntu ShadowsocksR 单/多端口 一键管理脚本][ssr]  
 > [CentOS/Debian/Ubuntu系统 TCP-BBR 一键安装脚本][bbr]
 
