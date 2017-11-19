@@ -95,3 +95,8 @@
    ```
 1. 为 [SourceForge](https://sourceforge.net) 加速:
    http://sourceforge.mirrorservice.org.
+1. Sublime Text 插件 LaTeXTools 关于 PDF 阅读器
+   SumaptraPDF 反向搜索的设置(`cmd` 中):
+   ```
+   sumatrapdf.exe -inverse-search "\"C:\Program Files\Sublime Text 3\sublime_text.exe\" \"%f:%l\""
+   ```
