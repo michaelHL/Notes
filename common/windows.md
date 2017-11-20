@@ -63,6 +63,7 @@
 1. tlmgr 更换 repository:
    ```
    tlmgr option repository http://mirrors.aliyun.com/CTAN/systems/texlive/tlnet
+   tlmgr option repository http://mirrors.ustc.edu.cn/CTAN/systems/texlive/tlnet
    ```
 1. Sublime Text 插件 SublimeREPL 出现
    `OSError: [WinError 6] The handle is invalid` 解决方案:

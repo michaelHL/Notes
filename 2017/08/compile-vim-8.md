@@ -113,9 +113,19 @@
 
 ### MSYS2 下编译过程
 
-```bash
-pacman -S ncurses-devel libcrypt-devel
+首先编译 `lua`:
 
+```
+curl -R -O http://www.lua.org/ftp/lua-5.3.4.tar.gz
+tar zxf lua-5.3.4.tar.gz
+cd lua-5.3.4
+pacman -S ncurses-devel libcrypt-devel gettext-devel
+make mingw && cd .. && make install
+```
+
+配置:
+
+```bash
 ./configure --with-features=huge \
             --enable-luainterp=yes \
             --enable-perlinterp=yes \
