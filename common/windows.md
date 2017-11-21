@@ -39,17 +39,17 @@
    即使为管理员账户也不能行使此账户的一些职权)
 1. 清除各种显卡右键菜单:
     - Nvidia:
-          清除: `regsvr32 /u nvcpl.dll`
-          显示: `regsvr32 nvcpl.dll`
+      - 清除: `regsvr32 /u nvcpl.dll`
+      - 显示: `regsvr32 nvcpl.dll`
     - Intel:
-          清除: `regsvr32 /u igfxsrvc.dll`
-          显示: `regsvr32 igfxsrvc.dll`
+      - 清除: `regsvr32 /u igfxsrvc.dll`
+      - 显示: `regsvr32 igfxsrvc.dll`
     - Ati:
-          清除: `regsvr32 /u atiacmxx.dll`
-          显示: `regsvr32 atiacmxx.dll`
+      - 清除: `regsvr32 /u atiacmxx.dll`
+      - 显示: `regsvr32 atiacmxx.dll`
     - Intel集成:
-          清除: `regsvr32 /u igfxpph.dll`
-          显示: `regsvr32 igfxpph.dll`
+      - 清除: `regsvr32 /u igfxpph.dll`
+      - 显示: `regsvr32 igfxpph.dll`
 1. 修复 vbs 默认打开方式: `cmd /c cscript/h:wscript`
 1. 无法附着到任务栏：
     ```
