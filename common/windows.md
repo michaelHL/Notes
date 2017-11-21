@@ -101,3 +101,4 @@
    ```
    sumatrapdf.exe -inverse-search "\"C:\Program Files\Sublime Text 3\sublime_text.exe\" \"%f:%l\""
    ```
+1. Mathtype 的官方安装包名为 `InstallMTW6.9b.exe`
