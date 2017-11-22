@@ -132,6 +132,10 @@ echo -e "\e[0;37;47m LightGray\e[0m 0;37m \t\e[1;37;40m White      \e[0m 1;37m"
 
 OUTPUT:
 
+<p align="center">
+    <img src="img/shell-colors.png">
+</p>
+
 ### Some examples
 
 Block background and white text
