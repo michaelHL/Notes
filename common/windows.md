@@ -102,6 +102,7 @@
    sumatrapdf.exe -inverse-search "\"C:\Program Files\Sublime Text 3\sublime_text.exe\" \"%f:%l\""
    ```
 1. Mathtype 的官方安装包名为 `InstallMTW6.9b.exe`
+1. Avast 杀毒软件的安装需要取消勾选 `Real Site`, 否则网速奇慢!
 1. Avast 添加排除目录 (添加信任): `Settings` -> `Components` ->
    `File Shield` && `Behavior Shield` -> `Customize` -> `Exclusions`,
    否则某些程序会无端卡死 (比如赖以生存的 `ConEmu`)
