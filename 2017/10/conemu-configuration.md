@@ -39,5 +39,7 @@
 }
 ```
 
+HAPPY CODING! :satisfied:
+
 [conemu]: https://conemu.github.io
 [connector]: https://github.com/Maximus5/cygwin-connector
