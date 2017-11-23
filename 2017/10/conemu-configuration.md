@@ -27,7 +27,7 @@
 
 对于一般程序, 在设置中的 `Integration` -> `Default term` -> `List of ...`
 中添加程序, 如果这些程序调用 `cmd`, `conemu` 将会自动被调用, 但 `sublime_text.exe`
-并没有反应, 为曲线救国, 比如 C 类型文件的编译配置文件 `C.sublime-build`:
+并没有反应, 只能曲线救国, 比如 C 类型文件的编译配置文件 `C.sublime-build`:
 
 ```
 {
