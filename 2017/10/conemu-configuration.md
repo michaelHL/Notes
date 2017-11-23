@@ -21,5 +21,23 @@
   ```
 - 当前的配置文件 [conemu.xml](../src/conemu.xml)
 
+### 问题
+
+#### 对于 Sublime Text 的集成
+
+对于一般程序, 在设置中的 `Integration` -> `Default term` -> `List of ...`
+中添加程序, 如果这些程序调用 `cmd`, `conemu` 将会自动被调用, 但 `sublime_text.exe`
+并没有反应, 为曲线救国, 比如 C 类型文件的编译配置文件 `C.sublime-build`:
+
+```
+{
+    // "shell_cmd": "gcc -std=c11 -Wall -s \"${file}\" -o \"${file_path}/${file_base_name}\" && \"${file_path}/${file_base_name}\"",
+    "shell_cmd": "D:\\UtilityPrograms\\ConEmu\\ConEmu.exe /single -run cmd /c -cur_console:n \"gcc -std=c11 -Wall -s ${file} -o ${file_path}/${file_base_name} && ${file_path}/${file_base_name} & pause \"",
+    "file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+    "working_dir": "${file_path}",
+    "selector": "source.c"
+}
+```
+
 [conemu]: https://conemu.github.io
 [connector]: https://github.com/Maximus5/cygwin-connector
