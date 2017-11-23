@@ -21,3 +21,4 @@
 - `arity` /ˈærɪti/ -- 元数
 - `baffle` /'bæfl/ -- 使困惑
 - `decouple` -- *vt, n* 解耦
+- `magenta` /mə'dʒɛntə/ -- 洋红, 品红
