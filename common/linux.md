@@ -42,3 +42,17 @@
    - `Redhat`, `Fedora Core`: `/var/log/secure`
    - `Mandrake`, `FreeBSD`, `OpenBSD`, `Debian`: `/var/log/auth.log`
    - `SUSE`: `/var/log/messages`
+1. 系统内建函数 `time` **功能有限** (`real` 时间是指挂钟时间,
+   也就是命令开始执行到结束的时间. 这个短时间包括其他进程所占用的时间片,
+   和进程被阻塞时所花费的时间. `user` 时间是指进程花费在用户模式中的CPU时间,
+   这是唯一真正用于执行进程所花费的时间, 其他进程和花费阻塞状态中的时间没有计算在内.
+   `sys` 时间是指花费在内核模式中的 CPU 时间, 代表在内核中执系统调用所花费的时间,
+   这也是真正由进程使用的 CPU 时间)  
+   而具有高级功能的 `/usr/bin/time` 有如下选项:
+   - `-o`: 将执行时间写入文件
+   - `-a`: 追加信息
+   - `-f`: 格式化时间输出
+   比如输出带管道命令的运行时间:
+   ```bash
+   time -f '%es' bash -c './test.py | sort > /dev/null'
+   ```
