@@ -61,9 +61,13 @@
 
 - bash
   - To check if you are in an interactive shell:
-        [[ $- == *i* ]] && echo 'Interactive' || echo 'Not interactive'
+    ```bash
+    [[ $- == *i* ]] && echo 'Interactive' || echo 'Not interactive'
+    ```
   - To check if you are in a login shell:
-        shopt -q login_shell && echo 'Login shell' || echo 'Not login shell'
+    ```bash
+    shopt -q login_shell && echo 'Login shell' || echo 'Not login shell'
+    ```
 
 
 
