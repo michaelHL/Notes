@@ -22,3 +22,4 @@
 - `baffle` /'bæfl/ -- 使困惑
 - `decouple` -- *vt, n* 解耦
 - `magenta` /mə'dʒɛntə/ -- 洋红, 品红
+- `hyphen` /'haɪfn/ -- 连字符
