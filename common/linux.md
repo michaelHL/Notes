@@ -25,7 +25,7 @@
    | <kbd>alt</kbd>  <kbd>f</kbd>              | 移动到后面一个单词首位 |
    | <kbd>ctrl</kbd> <kbd>k</kbd>              | 删除到行末             |
    | <kbd>ctrl</kbd> <kbd>u</kbd>              | 删除到行首             |
-   | <kbd>ctrl</kbd> <kbd>x</kbd> <kbd>x</kbd> | 切除至行首、末         |
+   | <kbd>ctrl</kbd> <kbd>x</kbd> <kbd>x</kbd> | 切换光标至行首、末     |
 
    注: 上述所有的「移动」均可认为处于Insert模式, 即光标相当于block在左边.
 1. `xargs` 处理带有空格文件名文件的问题.  
