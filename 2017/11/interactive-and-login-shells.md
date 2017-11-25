@@ -61,13 +61,13 @@
 
 - `bash` (参考 [How to check if a shell is login/interactive/batch][se-26676])
   ```bash
-  [[ $- == *i* ]] && echo 'Interactive' || echo 'Not interactive'
-  shopt -q login_shell && echo 'Login shell' || echo 'Not login shell'
+  [[ $- == *i* ]] && echo 'interactive' || echo 'NOT interactive'
+  shopt -q login_shell && echo 'login shell' || echo 'NOT login shell'
   ```
 - `zsh` (参考 [Interactive and Login Shells][gist-1])
   ```bash
-  [[ -o interactive ]] && echo "This ZSH Shell is a Interactive Shell" || echo "This ZSH Shell is Not a Interactive Shell"
-  [[ -o login ]] && echo "This ZSH Shell is a Login Shell" || echo "This ZSH Shell is Not a Login Shell"
+  [[ -o interactive ]] && echo "interactive" || echo "NOT interactive"
+  [[ -o login ]] && echo "login shell" || echo "NOT login shell"
   ```
 
 [gist-1]: https://gist.github.com/CMCDragonkai/33735c7fa6a2706462f2
