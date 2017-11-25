@@ -8,12 +8,12 @@
 > Subshells are always interactive but not login.  
 > Shell scripts are always non-login and non-interactive.  
 > Initial TTY shell should be login and interactive.
-
+>
 > Swtching users inside Linux involves creating subshells, can you elect to switch
 > without logging in, or switch while simulate the logging in process. Note that
 > logging in doesn't necessarily mean you need to enter passwords, nor that any
 > password to be entered is possessed by the user you're logging into.
-
+>
 > Since `.bashrc` is read on interactive but not login, and `.bash_profile` is read
 > on all login shells. People source the `.bashrc` in the `.bash_profile`, allowing
 > you to set general configuration (that applies to all interactive shells) inside
