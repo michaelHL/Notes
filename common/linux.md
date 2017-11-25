@@ -56,6 +56,4 @@
    **注** REHL 与 Debian 中的 `man time` 是不同的, 具体关于 `time` 的手册见
    [`TIME(1)`](src/man/TIME(1))  
    比如输出带管道命令的运行时间:
-   ```bash
-   time -f '%es' bash -c './test.py | sort > /dev/null'
-   ```
+   `bash time -f '%es' bash -c './test.py | sort > /dev/null'`
