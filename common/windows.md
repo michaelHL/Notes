@@ -106,3 +106,5 @@
 1. Avast 添加排除目录 (添加信任): `Settings` -> `Components` ->
    `File Shield` && `Behavior Shield` -> `Customize` -> `Exclusions`,
    否则某些程序会无端卡死 (比如赖以生存的 `ConEmu`)
+1. 用 UltraISO 刻录的 Windows 10 系统 U 盘无法创建分区 (提示为 MBR / GPT
+   分区) 解决方案: 删除 U 盘中文件夹 `efi/` 以及文件 `bootmgr.efi`
