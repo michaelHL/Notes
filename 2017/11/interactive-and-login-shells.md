@@ -2,12 +2,12 @@
 
 有这么些关系 (摘自 [Interactive and Login Shells][gist-1]):
 
- It doesn't seem like it's possible for there to be a login shell but not interactive.  
- Cron shell scripts are always non-login and non-interactive.  
- SSH shells are always login and interactive.  
- Subshells are always interactive but not login.  
- Shell scripts are always non-login and non-interactive.  
- Initial TTY shell should be login and interactive.
+ - It doesn't seem like it's possible for there to be a login shell but not interactive.
+ - Cron shell scripts are always non-login and non-interactive.
+ - SSH shells are always login and interactive.
+ - Subshells are always interactive but not login.
+ - Shell scripts are always non-login and non-interactive.
+ - Initial TTY shell should be login and interactive.
 
  Swtching users inside Linux involves creating subshells, can you elect to switch
  without logging in, or switch while simulate the logging in process. Note that
@@ -59,18 +59,17 @@
 
 那么如何判断当前 shell 为 `interactive` 或 `login` shell 呢?
 
-- `bash`
+- `bash` (参考 [How to check if a shell is login/interactive/batch][se-26676])
   ```bash
   [[ $- == *i* ]] && echo 'Interactive' || echo 'Not interactive'
   shopt -q login_shell && echo 'Login shell' || echo 'Not login shell'
   ```
-- `zsh`
+- `zsh` (参考 [Interactive and Login Shells][gist-1])
   ```bash
   [[ -o interactive ]] && echo "This ZSH Shell is a Interactive Shell" || echo "This ZSH Shell is Not a Interactive Shell"
   [[ -o login ]] && echo "This ZSH Shell is a Login Shell" || echo "This ZSH Shell is Not a Login Shell"
   ```
 
-
-
 [gist-1]: https://gist.github.com/CMCDragonkai/33735c7fa6a2706462f2
 [se-170493]: https://unix.stackexchange.com/a/170499
+[se-26676]: https://unix.stackexchange.com/a/26782
