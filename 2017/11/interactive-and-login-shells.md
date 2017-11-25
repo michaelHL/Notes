@@ -19,7 +19,8 @@
 > you to set general configuration (that applies to all interactive shells) inside
 > `.bashrc` but login specific configuration in `.bash_profile`.
 
-下面为具体的解释 (来自 [login/non-login and interactive/non-interactive shells][se-170493])
+下面为具体的解释, 以及不同情况下启动脚本的加载顺序.
+(来自 [login/non-login and interactive/non-interactive shells][se-170493])
 
 * **login** shell: A login shell logs you into the system as a spiecified user,
   necessary for this is a username and password.
@@ -56,6 +57,13 @@
     `[ -z "$PS1" ] && return`. That means don't do anything if it's a non-interactive shell)
   * depending on shell; some of them read the file in the `$ENV` variable
 
+那么如何判断当前 shell 为 `interactive` 或 `login` shell 呢?
+
+- bash
+  - To check if you are in an interactive shell:
+        [[ $- == *i* ]] && echo 'Interactive' || echo 'Not interactive'
+  - To check if you are in a login shell:
+        shopt -q login_shell && echo 'Login shell' || echo 'Not login shell'
 
 
 
