@@ -59,15 +59,16 @@
 
 那么如何判断当前 shell 为 `interactive` 或 `login` shell 呢?
 
-- bash
-  - To check if you are in an interactive shell:
-    ```bash
-    [[ $- == *i* ]] && echo 'Interactive' || echo 'Not interactive'
-    ```
-  - To check if you are in a login shell:
-    ```bash
-    shopt -q login_shell && echo 'Login shell' || echo 'Not login shell'
-    ```
+- `bash`
+  ```bash
+  [[ $- == *i* ]] && echo 'Interactive' || echo 'Not interactive'
+  shopt -q login_shell && echo 'Login shell' || echo 'Not login shell'
+  ```
+- `zsh`
+  ```bash
+  [[ -o interactive ]] && echo "This ZSH Shell is a Interactive Shell" || echo "This ZSH Shell is Not a Interactive Shell"
+  [[ -o login ]] && echo "This ZSH Shell is a Login Shell" || echo "This ZSH Shell is Not a Login Shell"
+  ```
 
 
 
