@@ -1,23 +1,27 @@
 ## 交互 Shells 和登录 Shells
 
-有这么些关系 (摘自 [Interactive and Login Shells][gist-1]):
+### 提出疑问
 
- - It doesn't seem like it's possible for there to be a login shell but not interactive.
- - Cron shell scripts are always non-login and non-interactive.
- - SSH shells are always login and interactive.
- - Subshells are always interactive but not login.
- - Shell scripts are always non-login and non-interactive.
- - Initial TTY shell should be login and interactive.
+> (摘自 [Interactive and Login Shells][gist-1]):
 
- Swtching users inside Linux involves creating subshells, can you elect to switch
- without logging in, or switch while simulate the logging in process. Note that
- logging in doesn't necessarily mean you need to enter passwords, nor that any
- password to be entered is possessed by the user you're logging into.
+- It doesn't seem like it's possible for there to be a login shell but not interactive.
+- Cron shell scripts are always non-login and non-interactive.
+- SSH shells are always login and interactive.
+- Subshells are always interactive but not login.
+- Shell scripts are always non-login and non-interactive.
+- Initial TTY shell should be login and interactive.
 
- Since `.bashrc` is read on interactive but not login, and `.bash_profile` is read
- on all login shells. People source the `.bashrc` in the `.bash_profile`, allowing
- you to set general configuration (that applies to all interactive shells) inside
- `.bashrc` but login specific configuration in `.bash_profile`.
+Swtching users inside Linux involves creating subshells, can you elect to switch
+without logging in, or switch while simulate the logging in process. Note that
+logging in doesn't necessarily mean you need to enter passwords, nor that any
+password to be entered is possessed by the user you're logging into.
+
+Since `.bashrc` is read on interactive but not login, and `.bash_profile` is read
+on all login shells. People source the `.bashrc` in the `.bash_profile`, allowing
+you to set general configuration (that applies to all interactive shells) inside
+`.bashrc` but login specific configuration in `.bash_profile`.
+
+### 略加思索
 
 下面为具体的解释, 以及不同情况下启动脚本的加载顺序.
 (来自 [login/non-login and interactive/non-interactive shells][se-170493])
@@ -57,7 +61,9 @@
     `[ -z "$PS1" ] && return`. That means don't do anything if it's a non-interactive shell)
   * depending on shell; some of them read the file in the `$ENV` variable
 
-那么如何判断当前 shell 为 `interactive` 或 `login` shell 呢?
+### 识破!
+
+> 那么如何判断当前 shell 为 `interactive` 或 `login` shell 呢?
 
 - `bash` (参考 [How to check if a shell is login/interactive/batch][se-26676])
   ```bash
