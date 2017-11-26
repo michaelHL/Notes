@@ -57,7 +57,7 @@
    cmd /k reg add "HKEY_CLASSES_ROOT\piffile" /v IsShortcut /f
    cmd /k taskkill /f /im explorer.exe & explorer.exe
    ```
-1. 启动项文件夹: shell:Startup
+1. 启动项文件夹: `shell:Startup`
 1. Cygwin 中 Mintty 快捷方式: `mintty.exe -i /Cygwin-Terminal.ico -`
 1. npm 路径: `C:\Users\xxx\AppData\Roaming\npm`
 1. tlmgr 更换 repository:
