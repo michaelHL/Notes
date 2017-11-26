@@ -112,4 +112,8 @@
    > The screen cannot be captured at the moment.
    > This is probably due to fast user switching or a disconnected/minimized
    > Remote Desktop session.
+
+   且场景为: 被连接的机器为笔记本, 盒上盖子, 已打开 tv 服务.  
    解决方案:
+   - 打开笔记本盖子
+   - 或将一根 HDMI 线连接至显示器
