@@ -108,3 +108,8 @@
    否则某些程序会无端卡死 (比如赖以生存的 `ConEmu`)
 1. 用 UltraISO 刻录的 Windows 10 系统 U 盘无法创建分区 (提示为 MBR / GPT
    分区) 解决方案: 删除 U 盘中文件夹 `efi/` 以及文件 `bootmgr.efi`
+1. TeamViewer(TV) 提示
+   > The screen cannot be captured at the moment.
+   > This is probably due to fast user switching or a disconnected/minimized
+   > Remote Desktop session.
+   解决方案:
