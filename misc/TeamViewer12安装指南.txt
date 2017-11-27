@@ -1,0 +1,10 @@
+1. 双击 `TeamViewer_Setup.exe` 进行安装
+2. 进入 `crack` 目录, 以管理员身份依次执行
+   `1=Stop service and program.bat`
+   `2=TeamViewer 12.xx Patch v2 AoRE.exe`
+   `3=start service and program.bat`
+3. 现在进入 tv, 应显示已激活
+4. 但是这个激活是不稳定的, 过不了多久就会显示还剩 7 天过期,
+   所以在退出 tv 的情况下, 安装 tmac (`TMACv6.0.7_Setup.exe`)
+5. 更改本机 mac 地址, 并重新执行步骤 2
+6. HIGH 起来
