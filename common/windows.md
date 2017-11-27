@@ -79,7 +79,7 @@
    ```
    [ Nasty-Newbie | 12:26:26.91 | C:\Users\Michael ]
    ```
-1. `MSYS2` 中的文件夹映射文件: `/etc/fstab`, 比如:
+1. `MSYS2` 中自动挂载文件: `/etc/fstab`, 比如:
    ```
    # For a description of the file format, see the Users Guide
    # http://cygwin.com/cygwin-ug-net/using.html#mount-table
@@ -95,11 +95,13 @@
    "\chrome.exe" /high-dpi-support=1 /force-device-scale-factor=1
    ```
 1. 为 [SourceForge](https://sourceforge.net) 加速:
-   http://sourceforge.mirrorservice.org.
+   http://sourceforge.mirrorservice.org
 1. Sublime Text 插件 LaTeXTools 关于 PDF 阅读器 SumaptraPDF 反向搜索的设置:
    ```
    sumatrapdf.exe -inverse-search "\"C:\Program Files\Sublime Text 3\sublime_text.exe\" \"%f:%l\""
    ```
+   关于公式不能预览的问题: 手动从 [Ghostscript 官网](https://ghostscript.com)
+   安装, 并将环境路径添加至 `TexLive` 路径前面; 添加 ImageMagick 的环境路径
 1. Mathtype 的官方安装包名为 `InstallMTW6.9b.exe`
 1. Avast 杀毒软件的安装需要取消勾选 `Real Site` (中文名可能为 `DNS` 相关),
    否则网速奇慢! 顺便, 防火墙也别装了, 简直神坑!
