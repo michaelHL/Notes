@@ -136,4 +136,4 @@
    ```
    "python_interpreter": "/path/to/python_exe"
    ```
-   加入**用户配置文件**
+   加入**用户配置文件** `Preferences.sublime-settings`
