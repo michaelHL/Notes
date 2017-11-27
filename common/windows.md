@@ -121,14 +121,9 @@
    - 或将一根 HDMI 线连接至显示器
 1. Sublime Text 插件 Anaconda 显示类似如下错误且伴有切换至 `python` 文件卡顿:
    ```
-   <Anaconda.anaconda_lib.workers.local_worker.LocalWorker object at
-   0x000001EA4B464FD0> initial check failed because:  
-   connection to localhost:51568 timed out after 0.2s.
-   tried to connect 7 times during 2 seconds  
-   check that there is Python process executing the anaconda
-   jsonserver.py script running in your system. If there is,
-   check that you can connect to your localhost writing the
-   following script in your Sublime Text 3 console:  
+   <Anaconda.anaconda_lib.workers.local_worker.LocalWorker object at 0x000001EA4B464FD0> initial check failed because:  
+   connection to localhost:51568 timed out after 0.2s. tried to connect 7 times during 2 seconds  
+   check that there is Python process executing the anaconda jsonserver.py script running in your system. If there is, check that you can connect to your localhost writing the following script in your Sublime Text 3 console:  
    import socket; socket.socket(socket.AF_INET, socket.SOCK_STREAM).connect(("localhost", 51568))
    ```
    场景: MSYS2 环境变量 `/usr/bin`, `/mingw64/bin`; Anaconda 没有加入环境变量.  
