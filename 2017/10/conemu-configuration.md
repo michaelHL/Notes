@@ -39,6 +39,19 @@
 }
 ```
 
+#### Zsh
+
+折腾了几次 Zsh, 无论是 `mintty` 还是 `ConEmu`, 效果均不理想.
+在 MSYS 中的修改方法不太清真, 需要修改启动的 `bat`,
+而在 `ConEmu` 方便许多, 比如添加 `task`:
+
+```
+set CHERE_INVOKING=1 & set MSYSTEM=MINGW64 & /path/to/zsh.exe --login -i -cur_console:n
+```
+
+但上述方法不像之前通过 `connector` 连接, 打开 `vim` 的时候颜色会错乱,
+加之 Zsh 在 MSYS 上反应略顿, 不折腾也罢!
+
 HAPPY CODING! :satisfied:
 
 [conemu]: https://conemu.github.io
