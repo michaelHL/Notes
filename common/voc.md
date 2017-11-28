@@ -24,3 +24,4 @@
 - `magenta` /mə'dʒɛntə/ -- 洋红, 品红
 - `hyphen` /'haɪfn/ -- 连字符
 - `reciprocal` /rɪ'sɪprəkl/ -- *n*, [数] 倒数; *adj*, 互惠的
+- `magnitude` -- *n*, 量级, 震级
