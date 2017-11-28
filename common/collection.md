@@ -10,6 +10,8 @@
 - **博客**
   - [岁月如歌](http://lovenight.github.io)
   - [阿驹](http://aju.space)
+  - [EZLippi-浮生志](https://www.ezlippi.com)
+  - [SeisMan](http://seisman.info)
 
 ### 工具
 
