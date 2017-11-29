@@ -19,7 +19,7 @@
 ### 配置反向代理 ssh 服务
 
 MSYS2 默认的源中没有 `autossh`, 所以需自行编译.
-repo: [autossh][autossh-additional-pkgs-repo].
+[repo][autossh-additional-pkgs-repo].
 
 一通操作:
 
