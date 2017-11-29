@@ -34,7 +34,9 @@ pacman -U autossh*.pkg.tar.xz
 安装系统服务:
 
 ```bash
-cygrunsrv -I AutoSSH_Local -p /usr/bin/autossh -a "-M 0 -o ExitOnForwardFailure=yes -o ServerAliveInterval=30 -o ServerAliveCountMax=3 -NR 1234:localhost:22 user@website -i ~/.ssh/id_rsa"
+# ssh-keygen -t 'rsa'
+ssh-copy-id user@domain
+cygrunsrv -I AutoSSH_Local -p /usr/bin/autossh -a "-M 0 -o ExitOnForwardFailure=yes -o ServerAliveInterval=30 -o ServerAliveCountMax=3 -NR 1234:localhost:22 user@domain -i ~/.ssh/id_rsa"
 ```
 
 那么就在系统中注册了名为 `AutoSSH_Local` 的服务,
