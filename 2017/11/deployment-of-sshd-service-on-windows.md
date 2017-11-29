@@ -12,12 +12,33 @@
    ```
 1. 为灵活切换 `MSYS` / `MINGW64` / `MINGW32` 环境,
    将 `/etc/ssh/sshd_config` 文件中的 `PermitUserEnvironment` 置为 `yes`,
-   并在 `~/.ssh/environment` 文件中添加 `MSYSTEM=MINGW64`
+   新建文件 `~/.ssh/environment` 并在其中添加 `MSYSTEM=MINGW64`
 1. `net start/stop sshd` 可启用 / 停止 `sshd` 服务
+   (此服务在系统的 `Services` 中名为 `MSYS2 sshd`, 登录账号应为 `.\sshd_server`)
 
 ### 配置反向代理 ssh 服务
 
 MSYS2 默认的源中没有 `autossh`, 所以需自行编译.
 repo: [autossh][autossh-additional-pkgs-repo].
+
+一通操作:
+
+```bash
+git clone https://github.com/mati865/MSYS2-additional-packages.git
+cd MSYS2-additional-packages/autossh
+makepkg
+pacman -U autossh*.pkg.tar.xz
+```
+
+如安装顺利, 则二进制文件为 `/usr/bin/autossh`.
+安装系统服务:
+
+```bash
+cygrunsrv -I AutoSSH_Local -p /usr/bin/autossh -a "-M 0 -o ExitOnForwardFailure=yes -o ServerAliveInterval=30 -o ServerAliveCountMax=3 -NR 1234:localhost:22 user@website -i ~/.ssh/id_rsa"
+```
+
+那么就在系统中注册了名为 `AutoSSH_Local` 的服务,
+在 `Services` 进一步修改, 将 `Log On` 中登录用户改为
+`.\${USER}`, 其中 `${USER}` 为 `MSYS` 中的用户名.
 
 [autossh-additional-pkgs-repo]: https://github.com/mati865/MSYS2-additional-packages
