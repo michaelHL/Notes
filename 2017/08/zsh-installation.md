@@ -1,7 +1,7 @@
 ## Zsh 折腾记
 
-**注** 之前的试验场所有 CentOS(本地 + 远程), ~~MSYS2~~ (巨卡无比,
-应该是 mintty 的锅, 不过不打算继续折腾这了)
+**注** 试验场所有 CentOS(本地 + 远程), Ubuntu 14.04+, ~~MSYS2~~ (巨卡无比,
+应该是 mintty 的锅, 不过不打算继续折腾了, 见 [ConEmu 折腾笔记](../10/conemu-configuration.md#zsh))
 
 ### 安装 Zsh
 
