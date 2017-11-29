@@ -2,7 +2,7 @@
 
 ### 配置 sshd 服务
 
-脚本: [sshd_msys.sh](../src/sshd_msys.sh), 注意其中的 `tmp_pass` 可作为登录密码.
+脚本: [sshd_msys.sh](src/sshd_msys.sh), 注意其中的 `tmp_pass` 可作为登录密码.
 
 1. 以管理员身份登录 MSYS2
 1. 手动创建一些文件
