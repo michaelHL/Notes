@@ -39,6 +39,7 @@ cygrunsrv -I AutoSSH_Local -p /usr/bin/autossh -a "-M 0 -o ExitOnForwardFailure=
 
 那么就在系统中注册了名为 `AutoSSH_Local` 的服务,
 在 `Services` 进一步修改, 将 `Log On` 中登录用户改为
-`.\${USER}`, 其中 `${USER}` 为 `MSYS` 中的用户名.
+`.\${USER}`, 其中 `${USER}` 为 `MSYS` 中的用户名,
+并输入系统密码. 启动 / 停止服务同上述 `sshd` 服务.
 
 [autossh-additional-pkgs-repo]: https://github.com/mati865/MSYS2-additional-packages
