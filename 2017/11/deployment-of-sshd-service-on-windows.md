@@ -7,7 +7,7 @@
 1. 以管理员身份登录 **MinGW64**
 1. 手动创建一些文件
    ```bash
-   mkpasswd > /etc/passwd
+   # mkpasswd > /etc/passwd
    touch /var/log/lastlog
    ```
 1. 为灵活切换 `MSYS` / `MINGW64` / `MINGW32` 环境,
