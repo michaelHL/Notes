@@ -46,8 +46,8 @@ cygrunsrv -I AutoSSH_Local -p /usr/bin/autossh -a "-M 0 -o ExitOnForwardFailure=
 
 ### 参考
 
-- [Autossh Windows][autossh-windows]
 - [Configure sshd on MSYS2 and run it as a Windows service][gist-00ee]
+- [Autossh Windows][autossh-windows]
 
 [gist-00ee]: https://gist.github.com/samhocevar/00eec26d9e9988d080ac#gistcomment-1508583
 [autossh-additional-pkgs-repo]: https://github.com/mati865/MSYS2-additional-packages
