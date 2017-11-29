@@ -32,8 +32,8 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
   ```bash
   git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
   ```
-- 自带主题: https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-- 额外主题: https://github.com/robbyrussell/oh-my-zsh/wiki/External-themes
+- 自带主题: [Themes][oh-my-zsh-themes]
+- 额外主题: [External themes][oh-my-zsh-external-themes]
 
 ### 配置 `.zshrc`
 
@@ -62,5 +62,7 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 
 [oh-my-zsh-repo]: https://github.com/robbyrussell/oh-my-zsh
 [oh-my-zsh-wiki]: https://github.com/robbyrussell/oh-my-zsh/wiki/Installing-ZSH
+[oh-my-zsh-themes]: https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+[oh-my-zsh-external-themes]: https://github.com/robbyrussell/oh-my-zsh/wiki/External-themes
 [powerlevel9k-repo]: https://github.com/bhilburn/powerlevel9k
 [nerdfonts-repo]: https://github.com/buzzkillhardball/nerdfonts
