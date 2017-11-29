@@ -14,7 +14,7 @@
    将 `/etc/ssh/sshd_config` 文件中的 `PermitUserEnvironment` 置为 `yes`,
    新建文件 `~/.ssh/environment` 并在其中添加 `MSYSTEM=MINGW64`
 1. `net start/stop sshd` 可启用 / 停止 `sshd` 服务
-   (此服务在系统的 `Services` 中名为 `MSYS2 sshd`, 登录账号应为 `.\sshd_server`)
+   (此服务在系统的 `Services` 中的服务名为 `sshd`, 登录账号应为 `.\sshd_server`)
 
 ### 配置反向代理 ssh 服务
 
