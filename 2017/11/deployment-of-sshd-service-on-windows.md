@@ -8,7 +8,7 @@
 1. 手动创建一些文件
    ```bash
    mkpasswd > /etc/passwd
-   touch var/log/lastlog
+   touch /var/log/lastlog
    ```
 1. 为灵活切换 `MSYS` / `MINGW64` / `MINGW32` 环境,
    将 `/etc/ssh/sshd_config` 文件中的 `PermitUserEnvironment` 置为 `yes`,
@@ -36,13 +36,21 @@ pacman -U autossh*.pkg.tar.xz
 ```bash
 # ssh-keygen -t 'rsa'
 ssh-copy-id user@domain
-cygrunsrv -I AutoSSH_Local -p /usr/bin/autossh -a "-M 0 -o ExitOnForwardFailure=yes -o ServerAliveInterval=30 -o ServerAliveCountMax=3 -NR 1234:localhost:22 user@domain -i ~/.ssh/id_rsa"
+cygrunsrv -I autossh_xxxx -d "MSYS2 Reverse Tunnel - xxxx" -p \
+          /usr/bin/autossh.exe -a "-M 0 -o ExitOnForwardFailure=yes -o \
+          ServerAliveInterval=30 -o ServerAliveCountMax=3 \
+          -NR 12345:localhost:22 user@domain -i ~/.ssh/id_rsa" \
+          -y tcpip -u ".\${USER}" -w "${PASSWD}"
+cygrunsrv -S autossh_xxxx
 ```
 
-那么就在系统中注册了名为 `AutoSSH_Local` 的服务,
-在 `Services` 进一步修改, 将 `Log On` 中登录用户改为
-`.\${USER}`, 其中 `${USER}` 为 `MSYS` 中的用户名,
-并输入系统密码. 启动 / 停止服务同上述 `sshd` 服务.
+那么就在系统中注册了名为 `autossh_xxxx` 的服务,
+其中 `${USER}`, `${PASSWD}` 分别为系统用户名和密码,
+启动 / 停止服务同上述 `sshd` 服务.
+
+### 注意
+
+`autossh` 服务需要进一步设置, 将其设为延迟启动, 并须设置失败后重启服务.
 
 ### 参考
 
