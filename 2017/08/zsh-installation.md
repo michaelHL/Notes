@@ -37,7 +37,7 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 
 ### 配置 `.zshrc`
 
-见 [`.zshrc`](src/.zshrc)
+见 [`.zshrc`](src/.zshrc) (针对 `powerlevel9k` 主题)
 
 ---
 
