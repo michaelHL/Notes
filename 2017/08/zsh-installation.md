@@ -26,13 +26,20 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 
 详情请见 oh-my-zsh 的 [wiki][oh-my-zsh-wiki].
 
-### 安装插件 Powerlevel9k
+### 主题
+
+#### Powerlevel9k
 
 官方 [repo][powerlevel9k-repo]
 
 ```bash
 git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
 ```
+
+#### 官方自带
+
+- 主题: https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+- 额外: https://github.com/robbyrussell/oh-my-zsh/wiki/External-themes
 
 ### 配置 `.zshrc`
 
