@@ -69,8 +69,9 @@ cygrunsrv -S autossh_12345
   ```
   Error: remote port forwarding failed for listen port 12345
   ```
-  详情见 [SSH remote port forwarding failed][se-595323].
-- 上述服务可能需要进一步设置, 将其设为自动启动, 并须设置**失败后重启服务**.
+  详情见 [SSH remote port forwarding failed][se-595323]
+- 不要试图更改服务中的登录选项, 仅本机账密才能行的通
+- 上述服务可能需要进一步设置, 将其设为自动启动, 并须设置**失败后重启服务**
 
 ### 参考
 
