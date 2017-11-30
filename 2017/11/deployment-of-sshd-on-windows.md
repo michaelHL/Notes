@@ -2,8 +2,6 @@
 
 记录 Windows 下清真搭建 sshd 服务全过程.
 
-需要: Windows 10 (1607) + MSYS2 + 操作.
-
 ### 配置 sshd 服务
 
 脚本: [sshd_msys.sh](src/sshd_msys.sh), 注意其中的 `tmp_pass` 可作为登录密码.
