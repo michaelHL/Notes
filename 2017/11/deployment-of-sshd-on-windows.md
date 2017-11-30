@@ -1,5 +1,9 @@
 ## Windows 下利用 MSYS2 搭建 sshd 服务器
 
+记录 Windows 下无痛~~人流~~搭建 sshd 服务全过程.
+
+环境: Windows 10 (1607) + MSYS2 + 操作.
+
 ### 配置 sshd 服务
 
 脚本: [sshd_msys.sh](src/sshd_msys.sh), 注意其中的 `tmp_pass` 可作为登录密码.
