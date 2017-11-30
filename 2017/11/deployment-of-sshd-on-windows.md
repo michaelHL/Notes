@@ -1,6 +1,6 @@
 ## Windows 下利用 MSYS2 搭建 sshd 服务器
 
-记录 Windows 下无痛~~人流~~搭建 sshd 服务全过程.
+记录 Windows 下清真搭建 sshd 服务全过程.
 
 环境: Windows 10 (1607) + MSYS2 + 操作.
 
