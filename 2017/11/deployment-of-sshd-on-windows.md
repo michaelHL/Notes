@@ -2,7 +2,7 @@
 
 记录 Windows 下清真搭建 sshd 服务全过程.
 
-环境: Windows 10 (1607) + MSYS2 + 操作.
+需要: Windows 10 (1607) + MSYS2 + 操作.
 
 ### 配置 sshd 服务
 
