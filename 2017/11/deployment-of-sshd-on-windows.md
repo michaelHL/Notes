@@ -61,15 +61,23 @@ cygrunsrv -S autossh_12345
 
 ### 注意
 
-- `autossh` 服务中的 `-o ExitOnForwardFailure=yes` 十分重要,
-  如果没有这个参数, 可能会导致重启服务器后无法成功反向代理,
-  就上述例子而言, 日志 `/var/log/autossh_12345.log` 会显示:
+开始试验时经常出现重启后无法连接的情况, 就上述例子而言,
+开机后打开日志 `/var/log/autossh_12345.log` 会显示:
+```
+Error: remote port forwarding failed for listen port 12345
+```
+详情见 [SSH remote port forwarding failed][se-595323].
+经过几十次的重启, 处理方案如下:
+
+- `autossh` 服务中的启动需加上 `-o ExitOnForwardFailure=yes`
+- 关机前务必停止 `autossh` 服务, 这里可以对关机、重启命令进行包装:
+  ```bash
+  alias poweroff='(net stop autossh_xxxx &); (shutdown -s -t 0 &)'
+  alias reboot='(net stop autossh_xxxx &); (shutdown -r -t 0 &)'
   ```
-  Error: remote port forwarding failed for listen port 12345
-  ```
-  详情见 [SSH remote port forwarding failed][se-595323]
+  而且该命令需要在管理员权限下执行, 或者在远程执行
 - 不要试图更改服务中的登录选项, 仅本机账密才能行的通
-- 上述服务可能需要进一步设置, 将其设为自动启动, 并须设置**失败后重启服务**
+- 可能需要设置失败后重启服务
 
 ### 参考
 
