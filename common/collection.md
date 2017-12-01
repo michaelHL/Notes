@@ -9,9 +9,8 @@
   - [List of Free Learning Resources](https://github.com/EbookFoundation/free-programming-books)
 - **博客**
   - [岁月如歌](http://lovenight.github.io)
-  - [阿驹](http://aju.space)
-  - [EZLippi-浮生志](https://www.ezlippi.com)
-  - [SeisMan](http://seisman.info)
+  - [EZLippi-浮生志](https://www.ezlippi.com) -- Linux
+  - [SeisMan](http://seisman.info) -- LaTeX
 
 ### 工具
 
