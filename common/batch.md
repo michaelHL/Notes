@@ -2,7 +2,7 @@
 
 #### 图片批量转 gif
 
-```
+```cmd
 @echo off
 set postfix_img=.gif
 
