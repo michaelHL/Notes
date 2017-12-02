@@ -1,8 +1,8 @@
 ## 小东西 -- Windows 脚本语言
 
-#### 图片 批量转 gif
+#### 图片批量转 gif
 
-```bat
+```batch
 @echo off
 set postfix_img=.gif
 
@@ -19,4 +19,10 @@ shift
 goto rec
 
 :done
+```
+
+#### 安装字体
+
+```
+xcopy /Y myfonts\*.ttf C:\Windows\Fonts\
 ```
