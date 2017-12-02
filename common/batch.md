@@ -23,6 +23,6 @@ goto rec
 
 #### 安装字体
 
-```
+```cmd
 xcopy /Y myfonts\*.ttf C:\Windows\Fonts\
 ```
