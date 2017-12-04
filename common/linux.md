@@ -28,10 +28,6 @@
    | <kbd>ctrl</kbd> <kbd>x</kbd> <kbd>x</kbd> | 切换光标至行首、末     |
 
    注: 上述所有的「移动」均可认为处于Insert模式, 即光标相当于block在左边.
-1. `xargs` 处理带有空格文件名文件的问题.  
-   比如下列命令对于空格文件名是会出问题的:
-   `find . -iname "*.mp3" -print | xargs mplayer`,
-   改用: `find . -iname "*.mp3" -print0 | xargs -0 -I mp3file mplayer mp3file`
 1. SSH 登录服务器缓慢解决方案:
    - 关闭 DNS 反向解析: `vim /etc/ssh/sshd_config`,
      设定其中 `UseDNS=no`, 重启服务 `service sshd restart`
