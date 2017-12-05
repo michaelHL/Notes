@@ -139,3 +139,5 @@
    加入**用户配置文件** `Preferences.sublime-settings`
 1. Xshell 5 中 <kbd>shift</kbd><kbd>tab</kbd> 效果却为切换标签处理办法:
    设置一次针对 <kbd>shift</kbd><kbd>tab</kbd> 的快捷键, 再取消设置这个快捷键
+1. Word 里面用 Mathtype 编辑的公式用默认的方法导出 PDF 文件时出现各类显示问题:
+   改用 [doPDF](http://www.dopdf.com)
