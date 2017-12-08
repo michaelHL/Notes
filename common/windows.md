@@ -141,3 +141,5 @@
    设置一次针对 <kbd>shift</kbd><kbd>tab</kbd> 的快捷键, 再取消设置这个快捷键
 1. Word 里面用 Mathtype 编辑的公式用默认的方法导出 PDF 文件时出现各类显示问题:
    改用 [doPDF](http://www.dopdf.com)
+1. Sublime Text 插件 Clang Format 令其对全文件格式化:
+   [Format whole file if nothing selected](https://github.com/rosshemsley/SublimeClangFormat/pull/10/commits/ea22686f40009104935a0378b7c4fd387121c8a1)
