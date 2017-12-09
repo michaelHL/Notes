@@ -111,6 +111,8 @@
    -lc    -lruby -lpthread -lrt -ldl -lcrypt -lm
    ```
 
+[`vimrc`](../src/.vimrc)
+
 ### MSYS2 下编译过程
 
 首先编译 `lua`:
@@ -140,6 +142,8 @@ make mingw && cd .. && make install
             --prefix=/usr/local \
             --with-compiledby='Professional operations'
 ```
+
+[`vimrc`](../src/_vimrc)
 
 ### Ubuntu 16.04 下编译过程
 
