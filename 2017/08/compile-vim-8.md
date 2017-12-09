@@ -168,7 +168,7 @@ sudo apt-get install libncurses5-dev libgnome2-dev \
 ### vimrc
 
 - Linux: [`.vimrc`](src/.vimrc)
-- MSYS: [`.vimrc`](src/.vimrc)
+- MSYS2: [`.vimrc`](src/.vimrc)
 
 ### 注意事项
 
