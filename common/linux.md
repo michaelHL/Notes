@@ -28,8 +28,6 @@
    | <kbd>ctrl</kbd> <kbd>u</kbd>              | 删除到行首             |
    | <kbd>ctrl</kbd> <kbd>t</kbd>              | 交换光标位置前两个字符 |
    | <kbd>esc</kbd>  <kbd>t</kbd>              | 交换光标位置前两个单词 |
-
-   注: 上述所有的「移动」均可认为处于Insert模式, 即光标相当于block在左边.
 1. SSH 登录服务器缓慢解决方案:
    - 关闭 DNS 反向解析: `vim /etc/ssh/sshd_config`,
      设定其中 `UseDNS=no`, 重启服务 `service sshd restart`
