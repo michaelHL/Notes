@@ -19,13 +19,15 @@
    | :---                                      | :---                   |
    | <kbd>ctrl</kbd> <kbd>a</kbd>              | 移动到行首             |
    | <kbd>ctrl</kbd> <kbd>e</kbd>              | 移动到行末             |
+   | <kbd>ctrl</kbd> <kbd>x</kbd> <kbd>x</kbd> | 切换光标至行首、末     |
    | <kbd>ctrl</kbd> <kbd>b</kbd>              | 移动到前面一个字母     |
    | <kbd>ctrl</kbd> <kbd>f</kbd>              | 移动到后面一个字母     |
    | <kbd>alt</kbd>  <kbd>b</kbd>              | 移动到前面一个单词首位 |
    | <kbd>alt</kbd>  <kbd>f</kbd>              | 移动到后面一个单词首位 |
    | <kbd>ctrl</kbd> <kbd>k</kbd>              | 删除到行末             |
    | <kbd>ctrl</kbd> <kbd>u</kbd>              | 删除到行首             |
-   | <kbd>ctrl</kbd> <kbd>x</kbd> <kbd>x</kbd> | 切换光标至行首、末     |
+   | <kbd>ctrl</kbd> <kbd>t</kbd>              | 交换光标位置前两个字符 |
+   | <kbd>esc</kbd>  <kbd>t</kbd>              | 交换光标位置前两个单词 |
 
    注: 上述所有的「移动」均可认为处于Insert模式, 即光标相当于block在左边.
 1. SSH 登录服务器缓慢解决方案:
