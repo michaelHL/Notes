@@ -83,6 +83,6 @@ cmake -G "Visual Studio 15 Win64" ^
 ### 链接
 
 - [编译 Vim 8.0](compile-vim-8.md)
-- [Linux 下编译 Vim 插件 YouCompleteme (YCM)](install-ycm-on-linux.md)
+- [Linux 下编译 Vim 插件 YouCompleteme (YCM)](compile-ycm-on-linux.md)
 - [Windows下VSCode利用Clang对C/C++进行补全](../07/c-c++-completion-by-clang-in-vscode.md)
 - [Windows下VSCode利用Ctags实现C/C++文件进行跳转](c-c++-code-navigation-by-ctags-on-windows.md)
