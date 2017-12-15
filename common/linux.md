@@ -15,7 +15,7 @@
    而`erasedups`清除整个历史中重复条目.
 1. 常用终端快捷键
    | command                      | trick              | command                      | trick                  |
-   | :---                         | :---               | <kbd>esc</kbd>  <kbd>b</kbd> | 移动到前面一个单词     |
+   | :---                         | :---               | :---                         | :---                   |
    | <kbd>ctrl</kbd> <kbd>a</kbd> | 移动到行首         | <kbd>esc</kbd>  <kbd>f</kbd> | 移动到后面一个单词     |
    | <kbd>ctrl</kbd> <kbd>e</kbd> | 移动到行末         | <kbd>ctrl</kbd> <kbd>k</kbd> | 删除到行末             |
    | <kbd>ctrl</kbd> <kbd>b</kbd> | 移动到前面一个字母 | <kbd>ctrl</kbd> <kbd>u</kbd> | 删除到行首             |
