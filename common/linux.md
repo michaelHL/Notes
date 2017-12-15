@@ -55,12 +55,14 @@
    1. `-dmS session` -- 新建一个 session (`-d` 表示不立即附着)
    1. `-r` -- (对于本机登录的自己) 恢复离线的 screen 作业
    1. `-x` -- (对于别处登录的相同的账号) 恢复作业, 实现同账号分享
+
    以下下操作处于 `screen` 中:
    - `<C-a> d` -- 从 `screen` 中脱离 (注: 直接 `<C-d>` 会关闭这个 `screen` !)
    - `<C-a> s` -- 冻结屏幕
    - `<C-a> q` -- 恢复冻结的屏幕
    - `<C-a> :multiuser on` -- 开始多用户模式
    - `<C-a> :acladd USER` -- 多用户模式中允许用户 `USER` 访问
+
    要实现不同账号分享, 首先在管理员权限下执行:
    ```sh
    chmod u+s $(which screen)
