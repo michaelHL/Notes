@@ -14,6 +14,7 @@
    将`HISTCONTROL`设成`ignoredups`仅忽略连续的重复命令,
    而`erasedups`清除整个历史中重复条目.
 1. 常用终端快捷键
+
    | command                      | trick              | command                      | trick                  |
    | :---                         | :---               | :---                         | :---                   |
    | <kbd>ctrl</kbd> <kbd>a</kbd> | 移动到行首         | <kbd>esc</kbd>  <kbd>f</kbd> | 移动到后面一个单词     |
