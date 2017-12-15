@@ -57,7 +57,7 @@
    - `<C-a> :multiuser on` -- 开始多用户模式
    - `<C-a> :acladd USER` -- 多用户模式中允许用户 `USER` 访问
 
-   要实现不同账号分享, 首先在管理员权限下执行:
+   要实现不同账号分享, 首先在 `root` 权限下执行:
    ```sh
    chmod u+s $(which screen)
    chmod 755 /var/run/screen
