@@ -63,6 +63,6 @@
    chmod 755 /var/run/screen
    rm -fr /var/run/screen/*
    ```
-   再进行上述多用户模式中的操作即可.
+   再进行上述多用户模式中的操作即可 (比如 `screen -x usera/shared`).
 
 
