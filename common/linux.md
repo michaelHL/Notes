@@ -63,6 +63,6 @@
    chmod 755 /var/run/screen
    rm -fr /var/run/screen/*
    ```
-   再开启多用户模式, 添加用户访问, 其它用户通过命令 `screen -x usera/shared` 即可.
+   再开启多用户模式, 添加用户访问权限, 其它用户通过命令 `screen -x usera/shared` 即可.
 
 
