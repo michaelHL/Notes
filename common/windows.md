@@ -132,10 +132,7 @@
    import socket; socket.socket(socket.AF_INET, socket.SOCK_STREAM).connect(("localhost", 51568))
    ```
    场景: MSYS2 环境变量 `/usr/bin`, `/mingw64/bin`; Anaconda 没有加入环境变量.  
-   解决方案: 将
-   ```
-   "python_interpreter": "/path/to/python_exe"
-   ```
+   解决方案: 将 `"python_interpreter": "/path/to/python_exe"`
    加入**用户配置文件** `Preferences.sublime-settings`
 1. Xshell 5 中 <kbd>shift</kbd><kbd>tab</kbd> 效果却为切换标签处理办法:
    设置一次针对 <kbd>shift</kbd><kbd>tab</kbd> 的快捷键, 再取消设置这个快捷键
