@@ -145,9 +145,9 @@
    [Format whole file if nothing selected](https://github.com/rosshemsley/SublimeClangFormat/pull/10/commits/ea22686f40009104935a0378b7c4fd387121c8a1)
 1. Sublime Text 插件 LaTeXTools 中公式渲染/预览不全解决方案:  
    配置文件中为 `preview_math_template_preamble` 添加
-   `\usepackage[margin=2cm]{geometry}`.
+   `\usepackage[margin=2cm]{geometry}`
 1. Windows 批处理在后台运行程序: `start /b xxx`,
    输出会在当前窗口 (当然可以通过 `>nul 2>&1` 抑制输出),
    但是可以进行其他操作 (有点类似于 *nix 中的 `&`).
    或者 `start /min "" program params`,
-   会在最小化的新窗口中运行程序, 同时控制权交给当前终端.
+   会在最小化的新窗口中运行程序, 同时控制权交给当前终端
