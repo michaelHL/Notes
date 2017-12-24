@@ -172,6 +172,7 @@ sudo apt-get install libncurses5-dev libgnome2-dev \
 
 ### 注意事项
 
-- 在 `CentOS` 机器上若安装其它版本的 `Python`, 可能导致各种与 `Python` 相关的问题,
+- 在 `CentOS` 机器上若安装其它版本的 `Python`, 可能导致各种与 `Python` 相关的问题
+  (比如 `Vim: Caught deadly signal ABRT`),
   在编译的时候灵活取舍 `python` 与 `python3` 选项即可
 - 若不能 `configure`, 执行 `make distclean`
