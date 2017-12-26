@@ -1,4 +1,4 @@
-## 个人收藏
+## 收藏
 
 ### 博客
 
@@ -15,3 +15,7 @@
 ### 工具
 
 - PDF 转 Word: [Smallpdf](https://smallpdf.com)
+
+### 算法
+
+- [由100盏灯想到的（一）](https://www.cnblogs.com/dhf327/p/4773672.html)
