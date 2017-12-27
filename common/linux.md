@@ -64,5 +64,8 @@
    rm -fr /var/run/screen/*
    ```
    再开启多用户模式, 添加用户访问权限, 其它用户通过命令 `screen -x usera/shared` 即可.
-
-
+1. Zsh 中的 `nohup` 可能不是那么「活湿」: 关闭 shell 后仍然会停止后台任务.
+   解决方案:
+   - `nohup <command> & disown`
+   - `dolphin &! <command>`
+   - `setopt NO_HUP`
