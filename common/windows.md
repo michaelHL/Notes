@@ -151,3 +151,4 @@
 1. Potplayer 关闭左上角的进度显示: 基本 -> 消息 -> 取消勾选「在屏幕上显示播放信息」
 1. 自动锁屏可在屏幕保护程序中进行设置, 即便是空的锁屏样式
 1. MSYS2 中安装 `watch`: `pacman -S procps-ng`
+1. GNU 工具源码镜像: http://mirrors.ustc.edu.cn/gnu
