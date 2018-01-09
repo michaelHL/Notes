@@ -152,3 +152,5 @@
 1. 自动锁屏可在屏幕保护程序中进行设置, 即便是空的锁屏样式
 1. MSYS2 中安装 `watch`: `pacman -S procps-ng`
 1. GNU 工具源码镜像: http://mirrors.ustc.edu.cn/gnu
+1. Ghost 系统桌面出现顽固图标注册表:
+   `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace`
