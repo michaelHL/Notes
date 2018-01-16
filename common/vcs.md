@@ -5,4 +5,5 @@
    - 码云: `svn export svn://git.oschina.net/<username>/<repo>/trunk/<subdir>`
    - 码市: `svn export svn+ssh://svn@svn.coding.net/<username>/<repo>/trunk/<subdir>`
 
-   其中 GitHub 已默认开启 svn; 码云及码市需要手动开启
+   其中 GitHub 已默认开启 svn; 码云及码市需要手动开启.
+   如要获取额外的版本信息, 将 `export` 改为 `checkout`
