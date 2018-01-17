@@ -1,7 +1,7 @@
 ## CentOS 服务器摘记
 
 1. 必要的EPEL包: `yum install -y epel-release`
-1. 查看CentOS系统realse版本: `cat /etc/readhat-release`
+1. 查看CentOS系统realse版本: `cat /etc/redhat-release`
 1. 电源管理, 笔记本合盖子问题.
    参考[Linux CentOS 7电源管理设置（合盖不睡眠）](http://www.jianshu.com/p/f8f2692b1d7a)  
    `systemd` 处理某些电源相关的ACPI事件，可以通过从 `/etc/systemd/logind.conf`
