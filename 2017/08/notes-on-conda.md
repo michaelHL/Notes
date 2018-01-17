@@ -77,5 +77,7 @@ Conda 可以更新自身: `conda update conda`; 可以更新 Anaconda:
 
 ### 补充
 
-从 **Anaconda 4.1.0** 开始, 一个特别的包 `nb_conda_kernels` 能够自动检测
-Conda 的所有环境并注册这些核到 Jupyter Notebook 里面.
+- 从 **Anaconda 4.1.0** 开始, 一个特别的包 `nb_conda_kernels` 能够自动检测
+  Conda 的所有环境并注册这些核到 Jupyter Notebook 里面.
+- Windows 中的 Anaconda 新建的新环境安装完 `anaconda`
+  包之后才会在开始程序中出现快捷方式
