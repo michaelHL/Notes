@@ -56,3 +56,4 @@
 - **更新** 上述的问题可能与 `File::HomeDir` 的版本过低有关,
   重新通过 `cpan` 安装貌似可以解决
 - 在标量上下文中, `each` 仅返回 `hash` 的键, 或者列表的索引
+- 从源码编译 Perl: http://www.cpan.org/src
