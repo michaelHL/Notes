@@ -1,44 +1,56 @@
 ## [Working with Excel Files in Python][0]
 
-This site contains pointers to the best information available about working with [Excel][18] files in the [Python][19] programming language.
+This site contains pointers to the best information available
+about working with [Excel][18] files in the [Python][19]
+programming language.
 
 ### The Packages
 
-There are python packages available to work with Excel files that will run on any Python platform and that do not require either Windows or Excel to be used. They are fast, reliable and open source:
+There are python packages available to work with Excel files that
+will run on any Python platform and that do not require either
+Windows or Excel to be used. They are fast, reliable and open source:
 
 ### openpyxl
 
-The recommended package for reading and writing Excel 2010 files (ie: .xlsx)
+The recommended package for reading and writing Excel 2010 files
+(ie: .xlsx)
 
 [Download][1] | [Documentation][2] | [Bitbucket][3]
 
 ### xlsxwriter
 
-An alternative package for writing data, formatting information and, in particular, charts in the Excel 2010 format (ie: .xlsx)
+An alternative package for writing data, formatting information and,
+in particular, charts in the Excel 2010 format (ie: .xlsx)
 
 [Download][4] | [Documentation][5] | [GitHub][6]
 
 ### xlrd
 
-This package is for reading data and formatting information from older Excel files (ie: .xls)
+This package is for reading data and formatting information
+from older Excel files (ie: .xls)
 
 [Download][7] | [Documentation][8] | [GitHub][9]
 
 ### xlwt
 
-This package is for writing data and formatting information to older Excel files (ie: .xls)
+This package is for writing data and formatting information
+to older Excel files (ie: .xls)
 
 [Download][10] | [Documentation][11] | [Examples][12] | [GitHub][13]
 
 ### xlutils
 
-This package collects utilities that require both xlrd and xlwt, including the ability to copy and modify or filter existing excel files. _**NB: **In general, these use cases are now covered by openpyxl!_
+This package collects utilities that require both xlrd and xlwt,
+including the ability to copy and modify or filter existing excel files.
+**NB: **In general, these use cases are now covered by openpyxl!
 
 [Download][14] | [Documentation][15] | [GitHub][16]
 
 ### The Mailing List / Discussion Group
 
-There is a [Google Group][17] dedicated to working with Excel files in Python, including the libraries listed above along with manipulating the Excel application via COM.
+There is a [Google Group][17] dedicated to working with Excel files
+in Python, including the libraries listed above along with
+manipulating the Excel application via COM.
 
 
 [0]:http://www.python-excel.org/
