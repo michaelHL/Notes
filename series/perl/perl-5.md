@@ -58,3 +58,7 @@
 - 在标量上下文中, `each` 仅返回 `hash` 的键, 或者列表的索引
 - 从源码编译 Perl: http://www.cpan.org/src.
   文章: [How to build perl from source on Linux](https://perlmaven.com/how-to-build-perl-from-source-code)
+- 关于 Perl 命令行参数 `-0`:
+  - `-0`: 相当于 `$/ = "\0"`
+  - `-00`: 相当于 `$/ = ""`, 段落模式
+  - `-0777`: 相当于 `$/ = undef`, 啜食模式
