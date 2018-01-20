@@ -69,3 +69,4 @@
    - `nohup <command> & disown`
    - `<command> &!`
    - `setopt NO_HUP`
+1. 获得指定用户登录 Shell 路径: `getent passwd $LOGNAME | cut -d: -f7`
