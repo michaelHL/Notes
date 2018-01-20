@@ -41,4 +41,16 @@
    ```
 1. 安装 MySQL 服务. 在 **`D:\MySQL\bin`** 目录下以管理员身份键入 `mysqld --install`
 
+### 参考
+
+- [如何修改MySQL5.7.18的密码][csdn-72356334]
+- [解决Windows安装解压版MySQL出现服务正在启动-服务无法启动的问题][csdn-49951577]
+- [Running/Starting MySQL without installation on Windows][stackoverflow-42045494]
+- [5.7 Upgrade and Resolving ERROR 1130 Host ‘localhost’ is Not Allowed to Connect][chriscalender-1130]
+
 [mysql-community-server]: https://dev.mysql.com/downloads/mysql
+[csdn-49951577]: http://blog.csdn.net/u013067166/article/details/49951577
+[csdn-72356334]: http://blog.csdn.net/xy_cy/article/details/72356334
+[stackoverflow-42045494]: https://stackoverflow.com/questions/42045494/running-starting-mysql-without-installation-on-windows
+[chriscalender-1130]: https://www.chriscalender.com/tag/error-1130-hy000-host-localhost-is-not-allowed-to-connect-to-this-mysql-server
+
