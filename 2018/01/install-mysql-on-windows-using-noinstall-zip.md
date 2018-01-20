@@ -33,7 +33,7 @@
    "D:\MySQL\bin\mysqld.exe" --defaults-file="D:\\MySQL\\my.ini" --console --skip-grant-tables
    ```
 1. 另开终端, 输入 `mysql -uroot -P 3677 -p` 直接回车,
-   并键入:
+   并键入 (`<password>` 为密码):
    ```
    update mysql.user set authentication_string=password('<password>') where user='root';
    flush privileges;
