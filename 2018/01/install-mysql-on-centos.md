@@ -19,7 +19,7 @@
 1. 允许远程访问:
    ```
    % mysql -uroot -p
-   grant all privileges on *.* to 'root' @'%' identified by '<password>';
+   grant all privileges on *.* to 'root'@'%' identified by '<password>';
    flush privileges;
    ```
 
