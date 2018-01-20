@@ -13,6 +13,7 @@
    max_connections = 200
    character-set-server = utf8
    default-storage-engine = INNODB
+   explicit_defaults_for_timestamp=true
 
    # innodb_buffer_pool_size = 128M
    # join_buffer_size = 128M
