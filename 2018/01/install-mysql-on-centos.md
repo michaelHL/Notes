@@ -67,10 +67,12 @@ chmod -R 777 /var/lib/mysql
 - [centos7 mysql数据库安装和配置][cnblogs-4680083]
 - [CentOS 7 下开启Mysql-5.7.19远程访问][csdn-76381632]
 - [CentOS7 64位下MySQL5.7安装与配置（YUM）][linuxidc-135288]
+- [RPM命令详解（安装、升级、卸载）][csdn-rpm]
 - [Configuring A Fresh Install Of MySQL On CentOS: Start Service, Set Password, Set Runlevels][linuxacademy-config-fresh-install-mysql]
 
 [linuxidc-135288]: http://www.linuxidc.com/Linux/2016-09/135288.htm
 [cnblogs-4680083]: https://www.cnblogs.com/starof/p/4680083.html
+[csdn-rpm]: http://blog.csdn.net/samxx8/article/details/46739005
 [mysql-yum-repo]: https://dev.mysql.com/downloads/repo/yum
 [csdn-76381632]: http://blog.csdn.net/u010758410/article/details/76381632
 [linuxacademy-config-fresh-install-mysql]: https://linuxacademy.com/blog/linux/configuring-a-fresh-install-of-mysql-on-centos-start-service-set-password-set-runlevels
