@@ -62,7 +62,7 @@ pid-file=/var/run/mysqld/mysqld.pid
 chmod -R 777 /var/lib/mysql
 ```
 
-###
+### 参考
 
 - [centos7 mysql数据库安装和配置][cnblogs-4680083]
 - [CentOS 7 下开启Mysql-5.7.19远程访问][csdn-76381632]
