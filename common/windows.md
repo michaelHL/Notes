@@ -154,3 +154,4 @@
 1. GNU 工具源码镜像: http://mirrors.ustc.edu.cn/gnu
 1. Ghost 系统桌面出现顽固图标注册表:
    `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace`
+1. 列出所有 Windows 服务状态: `sc queryex type= service state= all | find /i "NATION"`
