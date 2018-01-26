@@ -14,3 +14,5 @@
 1. 正则模块函数 `re.match` 仅从字符串开头开始匹配
 1. Jupyter Notebook 分享代码 http://nbviewer.ipython.org
 1. 推荐 Python 安装包国内镜像网站: http://mirrors.sohu.com/python
+1. Jupyter Notebook 更改 MathJax 字体方法:
+   https://stackoverflow.com/a/44290246/4154610
