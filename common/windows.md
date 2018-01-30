@@ -85,6 +85,7 @@
    [ Nasty-Newbie | 12:26:26.91 | C:\Users\Michael ]
    ```
 1. `MSYS2` 中自动挂载文件: `/etc/fstab`, 比如:
+
    ```
    # For a description of the file format, see the Users Guide
    # http://cygwin.com/cygwin-ug-net/using.html#mount-table
