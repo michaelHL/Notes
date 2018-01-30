@@ -85,7 +85,6 @@
    [ Nasty-Newbie | 12:26:26.91 | C:\Users\Michael ]
    ```
 1. `MSYS2` 中自动挂载文件: `/etc/fstab`, 比如:
-
    ```
    # For a description of the file format, see the Users Guide
    # http://cygwin.com/cygwin-ug-net/using.html#mount-table
@@ -96,7 +95,6 @@
    D:\MSYS2\home\Michael\Notes /notes
    F:\WorkingDirectory\Work\__current /current
    ```
-
 1. Chrome 浏览器在高分屏幕下的快捷方式:
    ```
    "\chrome.exe" /high-dpi-support=1 /force-device-scale-factor=1
