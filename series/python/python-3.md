@@ -16,3 +16,12 @@
 1. 推荐 Python 安装包国内镜像网站: http://mirrors.sohu.com/python
 1. Jupyter Notebook 更改 MathJax 字体方法:
    https://stackoverflow.com/a/44290246/4154610
+1. [计算 `datatime` 加上特定月数后的日期](https://stackoverflow.com/a/15155212/4154610):
+   ```
+   from datetime import datetime
+   from dateutil.relativedelta import relativedelta
+
+   date_after_month = datetime.today()+ relativedelta(months=1)
+   print('Today: ',datetime.today().strftime('%d/%m/%Y'))
+   print('After Month:', date_after_month.strftime('%d/%m/%Y'))
+   ```
