@@ -75,3 +75,9 @@
    dns-nameservers 223.5.5.5 223.6.6.6
    ```
    重启 `networking`: `sudo /etc/init.d/networking restart`
+1. docker 命令免 `sudo`:
+   ```
+   sudo groupadd docker
+   sudo gpasswd -a ${USER} docker
+   sudo service docker restart
+   ```
