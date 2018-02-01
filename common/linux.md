@@ -70,3 +70,9 @@
    - `<command> &!`
    - `setopt NO_HUP`
 1. 获得指定用户登录 Shell 路径: `getent passwd $LOGNAME | cut -d: -f7`
+1. 配置静态 DNS (Ubuntu): 修改 `/etc/network/interfaces`:
+   ```
+   ...
+   dns-nameservers 223.5.5.5 223.6.6.6
+   ...
+   ```
