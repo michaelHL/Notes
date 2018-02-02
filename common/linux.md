@@ -63,7 +63,8 @@
    chmod 755 /var/run/screen
    rm -fr /var/run/screen/*
    ```
-   再开启多用户模式, 添加用户访问权限, 其它用户通过命令 `screen -x usera/shared` 即可.
+   再开启多用户模式, 添加用户访问权限, 其它用户通过命令 `screen -x usera/shared` 即可.  
+   另, 出现 `cannot open terminal` 时可用 `script /dev/null`
 1. Zsh 中的 `nohup` 与 Bash 有所不同: 关闭 shell 后仍然会停止后台任务.
    解决方案:
    - `nohup <command> & disown`
