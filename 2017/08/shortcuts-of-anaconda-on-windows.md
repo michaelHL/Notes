@@ -1,4 +1,4 @@
-## Windowns 下 Anaconda3 安装后产生的快捷方式
+## Windows 下 Anaconda3 安装后产生的快捷方式
 
 **注** Anaconda3 安装目录为 `D:\Anaconda3`,
 表格 Details 中上面表示 `目标`, 下面为 `Start in`.

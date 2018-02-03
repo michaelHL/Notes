@@ -82,7 +82,3 @@
    sudo gpasswd -a ${USER} docker
    sudo service docker restart
    ```
-1. 命令 `lsb_release` 提示 `No LSB modules are available.`:
-   ```
-   sudo apt install lsb-core
-   ```
